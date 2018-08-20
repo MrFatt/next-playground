@@ -1,13 +1,26 @@
+const fetch = require("isomorphic-unfetch");
+
 module.exports = {
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/{reponame}' : '',
-  exportPathMap: function () {
+  assetPrefix: process.env.NODE_ENV === "production" ? "/{reponame}" : "",
+  exportPathMap: async function() {
+    const res = await fetch("https://api.tvmaze.com/search/shows?q=batman");
+    const shows = await res.json();
+
+    const routes = shows.reduce(
+      (acc, { show }) =>
+        Object.assign({}, acc, {
+          [`/post/${show.id}`]: {
+            page: "/post",
+            query: { id: show.id }
+          }
+        }),
+      {}
+    );
+
     return {
-      '/': { page: '/' },
-      '/about': { page: '/about' },
-      '/p/hello-nextjs': { page: '/post', query: { title: "Hello Next.js" } },
-      '/p/learn-nextjs': { page: '/post', query: { title: "Learn Next.js is awesome" } },
-      '/p/deploy-nextjs': { page: '/post', query: { title: "Deploy apps with Zeit" } },
-      '/p/exporting-pages': { page: '/post', query: { title: "Learn to Export HTML Pages" } }
-    }
+      "/": { page: "/" },
+      "/about": { page: "/about" },
+      ...routes
+    };
   }
-}
+};
