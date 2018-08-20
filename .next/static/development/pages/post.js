@@ -6552,7 +6552,8 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
-var Content = Object(next_router__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(function (_ref) {
+
+var Content = function Content(_ref) {
   var show = _ref.show;
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     __source: {
@@ -6569,14 +6570,14 @@ var Content = Object(next_router__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(fun
       fileName: _jsxFileName,
       lineNumber: 8
     }
-  }, show.summary.replace(/<[/]?p>/g, '')), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+  }, show.summary.replace(/<[/]?[pb]>/g, '')), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     src: show.image.medium,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     }
   }));
-});
+};
 
 var Post = function Post(props) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_MyLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {

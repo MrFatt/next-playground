@@ -2,13 +2,13 @@ import { withRouter } from "next/router";
 
 import MyLayout from "../components/MyLayout";
 
-const Content = withRouter(({show}) => (
+const Content = ({show}) => (
   <div>
     <h1>{show.name}</h1>
-    <p>{show.summary.replace(/<[/]?p>/g, '')}</p>
+    <p>{show.summary.replace(/<[/]?[pb]>/g, '')}</p>
     <img src={show.image.medium}/>
   </div>
-));
+);
 
 const Post = props => (
   <MyLayout>
