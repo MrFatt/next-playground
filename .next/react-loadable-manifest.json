@@ -1,0 +1,504 @@
+{
+  "react": [
+    {
+      "id": 0,
+      "name": "./node_modules/react/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/interopRequireDefault": [
+    {
+      "id": 1,
+      "name": "./node_modules/@babel/runtime/helpers/interopRequireDefault.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/classCallCheck": [
+    {
+      "id": 2,
+      "name": "./node_modules/@babel/runtime/helpers/classCallCheck.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/createClass": [
+    {
+      "id": 3,
+      "name": "./node_modules/@babel/runtime/helpers/createClass.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/defineProperty": [
+    {
+      "id": 5,
+      "name": "./node_modules/@babel/runtime/helpers/defineProperty.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/interopRequireWildcard": [
+    {
+      "id": 7,
+      "name": "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "../lib/utils": [
+    {
+      "id": 8,
+      "name": "./node_modules/next/dist/lib/utils.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/possibleConstructorReturn": [
+    {
+      "id": 9,
+      "name": "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/getPrototypeOf": [
+    {
+      "id": 10,
+      "name": "./node_modules/@babel/runtime/helpers/getPrototypeOf.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/inherits": [
+    {
+      "id": 11,
+      "name": "./node_modules/@babel/runtime/helpers/inherits.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "prop-types": [
+    {
+      "id": 12,
+      "name": "./node_modules/next/node_modules/prop-types/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/regenerator": [
+    {
+      "id": 13,
+      "name": "./node_modules/@babel/runtime/regenerator/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "../components/MyLayout": [
+    {
+      "id": 16,
+      "name": "./components/MyLayout.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/objectSpread": [
+    {
+      "id": 17,
+      "name": "./node_modules/@babel/runtime/helpers/objectSpread.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "../lib/router": [
+    {
+      "id": 18,
+      "name": "./node_modules/next/dist/lib/router/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./../../../process/browser.js": [
+    {
+      "id": 19,
+      "name": "./node_modules/process/browser.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "next/link": [
+    {
+      "id": 20,
+      "name": "./node_modules/next/link.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/asyncToGenerator": [
+    {
+      "id": 21,
+      "name": "./node_modules/@babel/runtime/helpers/asyncToGenerator.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "../helpers/typeof": [
+    {
+      "id": 22,
+      "name": "./node_modules/@babel/runtime/helpers/typeof.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "fbjs/lib/invariant": [
+    {
+      "id": 25,
+      "name": "./node_modules/fbjs/lib/invariant.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "fbjs/lib/emptyFunction": [
+    {
+      "id": 26,
+      "name": "./node_modules/fbjs/lib/emptyFunction.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "../lib/EventEmitter": [
+    {
+      "id": 27,
+      "name": "./node_modules/next/dist/lib/EventEmitter.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "object-assign": [
+    {
+      "id": 37,
+      "name": "./node_modules/object-assign/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "fbjs/lib/emptyObject": [
+    {
+      "id": 38,
+      "name": "./node_modules/fbjs/lib/emptyObject.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/slicedToArray": [
+    {
+      "id": 39,
+      "name": "./node_modules/@babel/runtime/helpers/slicedToArray.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./setPrototypeOf": [
+    {
+      "id": 40,
+      "name": "./node_modules/@babel/runtime/helpers/setPrototypeOf.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "url": [
+    {
+      "id": 41,
+      "name": "./node_modules/url/url.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./../../../webpack/buildin/module.js": [
+    {
+      "id": 42,
+      "name": "./node_modules/webpack/buildin/module.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./shallow-equals": [
+    {
+      "id": 43,
+      "name": "./node_modules/next/dist/lib/shallow-equals.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./assertThisInitialized": [
+    {
+      "id": 44,
+      "name": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "define-properties": [
+    {
+      "id": 45,
+      "name": "./node_modules/define-properties/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "object-keys": [
+    {
+      "id": 46,
+      "name": "./node_modules/object-keys/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./implementation": [
+    {
+      "id": 47,
+      "name": "./node_modules/object.assign/implementation.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    },
+    {
+      "id": 104,
+      "name": "./node_modules/function-bind/implementation.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "function-bind": [
+    {
+      "id": 48,
+      "name": "./node_modules/function-bind/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./polyfill": [
+    {
+      "id": 49,
+      "name": "./node_modules/object.assign/polyfill.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "regenerator-runtime": [
+    {
+      "id": 65,
+      "name": "./node_modules/regenerator-runtime/runtime-module.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./runtime": [
+    {
+      "id": 66,
+      "name": "./node_modules/regenerator-runtime/runtime.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./cjs/react.production.min.js": [
+    {
+      "id": 67,
+      "name": "./node_modules/react/cjs/react.production.min.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./arrayWithHoles": [
+    {
+      "id": 77,
+      "name": "./node_modules/@babel/runtime/helpers/arrayWithHoles.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./iterableToArrayLimit": [
+    {
+      "id": 78,
+      "name": "./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./nonIterableRest": [
+    {
+      "id": 79,
+      "name": "./node_modules/@babel/runtime/helpers/nonIterableRest.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "@babel/runtime/helpers/construct": [
+    {
+      "id": 80,
+      "name": "./node_modules/@babel/runtime/helpers/construct.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./router": [
+    {
+      "id": 81,
+      "name": "./node_modules/next/dist/lib/router/router.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "punycode": [
+    {
+      "id": 82,
+      "name": "./node_modules/node-libs-browser/node_modules/punycode/punycode.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./../../../webpack/buildin/global.js": [
+    {
+      "id": 83,
+      "name": "./node_modules/webpack/buildin/global.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./util": [
+    {
+      "id": 84,
+      "name": "./node_modules/url/util.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "querystring": [
+    {
+      "id": 85,
+      "name": "./node_modules/querystring-es3/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./decode": [
+    {
+      "id": 86,
+      "name": "./node_modules/querystring-es3/decode.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./encode": [
+    {
+      "id": 87,
+      "name": "./node_modules/querystring-es3/encode.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "../p-queue": [
+    {
+      "id": 88,
+      "name": "./node_modules/next/dist/lib/p-queue.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./with-router": [
+    {
+      "id": 89,
+      "name": "./node_modules/next/dist/lib/router/with-router.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./factoryWithThrowingShims": [
+    {
+      "id": 90,
+      "name": "./node_modules/next/node_modules/prop-types/factoryWithThrowingShims.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./lib/ReactPropTypesSecret": [
+    {
+      "id": 91,
+      "name": "./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "hoist-non-react-statics": [
+    {
+      "id": 92,
+      "name": "./node_modules/hoist-non-react-statics/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./dist/lib/link": [
+    {
+      "id": 100,
+      "name": "./node_modules/next/dist/lib/link.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "prop-types-exact": [
+    {
+      "id": 101,
+      "name": "./node_modules/prop-types-exact/build/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "object.assign": [
+    {
+      "id": 102,
+      "name": "./node_modules/object.assign/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./isArguments": [
+    {
+      "id": 103,
+      "name": "./node_modules/object-keys/isArguments.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "has-symbols/shams": [
+    {
+      "id": 105,
+      "name": "./node_modules/has-symbols/shams.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./shim": [
+    {
+      "id": 106,
+      "name": "./node_modules/object.assign/shim.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "has": [
+    {
+      "id": 107,
+      "name": "./node_modules/has/src/index.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ],
+  "./helpers/isPlainObject": [
+    {
+      "id": 108,
+      "name": "./node_modules/prop-types-exact/build/helpers/isPlainObject.js",
+      "file": "static/chunks/382114674793c1e7e2fd.js",
+      "publicPath": "static/chunks/382114674793c1e7e2fd.js"
+    }
+  ]
+}
