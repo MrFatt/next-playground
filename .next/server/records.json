@@ -22,7 +22,8 @@
       "external \"next/error\"": 18,
       "multi node_modules/next/dist/pages/_document.js": 19,
       "node_modules/next/dist/pages/_document.js": 20,
-      "external \"next/document\"": 21
+      "external \"next/document\"": 21,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!components/MyLayout.js 65cc44a742c78b3417de3c1da5793c0d": 2
     },
     "usedIds": {
       "0": 0,
@@ -86,16 +87,46 @@
       "static/fd6c8937-92cc-45bf-a9dc-fee36a1cbaf6/pages/post.js": 8,
       "static/fd6c8937-92cc-45bf-a9dc-fee36a1cbaf6/pages/_app.js": 9,
       "static/fd6c8937-92cc-45bf-a9dc-fee36a1cbaf6/pages/_error.js": 10,
-      "static/fd6c8937-92cc-45bf-a9dc-fee36a1cbaf6/pages/_document.js": 11
+      "static/fd6c8937-92cc-45bf-a9dc-fee36a1cbaf6/pages/_document.js": 11,
+      "static/67cad376-f1fe-4741-af00-7526c05467f0/pages/about.js": 0,
+      "static/67cad376-f1fe-4741-af00-7526c05467f0/pages/index.js": 1,
+      "static/67cad376-f1fe-4741-af00-7526c05467f0/pages/post.js": 2,
+      "static/67cad376-f1fe-4741-af00-7526c05467f0/pages/_app.js": 3,
+      "static/67cad376-f1fe-4741-af00-7526c05467f0/pages/_error.js": 4,
+      "static/67cad376-f1fe-4741-af00-7526c05467f0/pages/_document.js": 5,
+      "static/3ed8afeb-d6d4-486c-888e-a5b09fd33fba/pages/about.js": 6,
+      "static/3ed8afeb-d6d4-486c-888e-a5b09fd33fba/pages/index.js": 7,
+      "static/3ed8afeb-d6d4-486c-888e-a5b09fd33fba/pages/post.js": 8,
+      "static/3ed8afeb-d6d4-486c-888e-a5b09fd33fba/pages/_app.js": 9,
+      "static/3ed8afeb-d6d4-486c-888e-a5b09fd33fba/pages/_error.js": 10,
+      "static/3ed8afeb-d6d4-486c-888e-a5b09fd33fba/pages/_document.js": 11,
+      "static/94fc4783-0352-4e59-82b0-445770590f7c/pages/about.js": 0,
+      "static/94fc4783-0352-4e59-82b0-445770590f7c/pages/index.js": 1,
+      "static/94fc4783-0352-4e59-82b0-445770590f7c/pages/post.js": 2,
+      "static/94fc4783-0352-4e59-82b0-445770590f7c/pages/_app.js": 3,
+      "static/94fc4783-0352-4e59-82b0-445770590f7c/pages/_error.js": 4,
+      "static/94fc4783-0352-4e59-82b0-445770590f7c/pages/_document.js": 5,
+      "static/6f3acfa4-4784-4f9e-9b3e-40587581d587/pages/about.js": 6,
+      "static/6f3acfa4-4784-4f9e-9b3e-40587581d587/pages/index.js": 7,
+      "static/6f3acfa4-4784-4f9e-9b3e-40587581d587/pages/post.js": 8,
+      "static/6f3acfa4-4784-4f9e-9b3e-40587581d587/pages/_app.js": 9,
+      "static/6f3acfa4-4784-4f9e-9b3e-40587581d587/pages/_error.js": 10,
+      "static/6f3acfa4-4784-4f9e-9b3e-40587581d587/pages/_document.js": 11,
+      "static/abfbbb92-22e4-4029-af4f-4b09f1975272/pages/about.js": 0,
+      "static/abfbbb92-22e4-4029-af4f-4b09f1975272/pages/index.js": 1,
+      "static/abfbbb92-22e4-4029-af4f-4b09f1975272/pages/post.js": 2,
+      "static/abfbbb92-22e4-4029-af4f-4b09f1975272/pages/_app.js": 3,
+      "static/abfbbb92-22e4-4029-af4f-4b09f1975272/pages/_error.js": 4,
+      "static/abfbbb92-22e4-4029-af4f-4b09f1975272/pages/_document.js": 5
     },
     "bySource": {},
     "usedIds": [
-      10,
-      11,
-      6,
-      7,
-      8,
-      9
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
     ]
   }
 }

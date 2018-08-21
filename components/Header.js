@@ -5,7 +5,7 @@ const lintStyle = {
 };
 
 const Header = () => {
-  const backendUrl = process.env.BACKEND_URL || "";
+  const backendUrl = process.env.BACKEND_URL;
   return (
     <div>
       <Link href="/" as={backendUrl + "/about"}>
