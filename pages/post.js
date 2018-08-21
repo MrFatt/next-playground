@@ -16,7 +16,8 @@ const Post = props => (
   </MyLayout>
 );
 
-Post.getInitialProps = async ({query}) => {
+Post.getInitialProps = async (req) => {
+  const query = req.query;
   const res = await fetch(`https://api.tvmaze.com/shows/${query.id}`);
   const show = await res.json();
 
@@ -25,4 +26,4 @@ Post.getInitialProps = async ({query}) => {
   return { show }
 }
 
-export default withRouter(Post);
+export default Post;

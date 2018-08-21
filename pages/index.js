@@ -6,13 +6,10 @@ import MyLayout from "../components/MyLayout";
 const PostLink = ({ show }) => (
   <div>
     <li>
-      <Link prefetch href={`/p/${show.id}`}>
+      <Link prefetch as={`/post/${show.id}`} href={`/post/${show.id}`}>
         <a>{show.name}</a>
       </Link>
     </li>
-    <style jsx>{`
-
-    `}</style>
   </div>
 );
 

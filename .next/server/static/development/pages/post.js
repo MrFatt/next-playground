@@ -262,31 +262,32 @@ var Post = function Post(props) {
 Post.getInitialProps =
 /*#__PURE__*/
 function () {
-  var _ref3 = _asyncToGenerator(
+  var _ref2 = _asyncToGenerator(
   /*#__PURE__*/
-  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref2) {
+  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(req) {
     var query, res, show;
     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            query = _ref2.query;
-            _context.next = 3;
+            query = req.query;
+            console.log(req);
+            _context.next = 4;
             return fetch("https://api.tvmaze.com/shows/".concat(query.id));
 
-          case 3:
+          case 4:
             res = _context.sent;
-            _context.next = 6;
+            _context.next = 7;
             return res.json();
 
-          case 6:
+          case 7:
             show = _context.sent;
             console.log("Fetched show: ".concat(show.name));
             return _context.abrupt("return", {
               show: show
             });
 
-          case 9:
+          case 10:
           case "end":
             return _context.stop();
         }
@@ -295,11 +296,11 @@ function () {
   }));
 
   return function (_x) {
-    return _ref3.apply(this, arguments);
+    return _ref2.apply(this, arguments);
   };
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(Post));
+/* harmony default export */ __webpack_exports__["default"] = (Post);
 
 /***/ }),
 

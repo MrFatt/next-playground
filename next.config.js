@@ -9,7 +9,7 @@ module.exports = {
     const routes = shows.reduce(
       (acc, { show }) =>
         Object.assign({}, acc, {
-          [`/p/${show.id}`]: {
+          [`/post/${show.id}`]: {
             page: "/post",
             query: { id: show.id }
           }

@@ -7,13 +7,13 @@
       "external \"@babel/runtime/regenerator\"": 3,
       "external \"styled-jsx/style\"": 4,
       "external \"isomorphic-unfetch\"": 5,
-      "external \"next/router\"": 6,
-      "multi ./pages/about.js": 7,
-      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/about.js": 8,
-      "multi ./pages/index.js": 9,
-      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js": 10,
-      "multi ./pages/post.js": 11,
-      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/post.js": 12,
+      "multi ./pages/about.js": 6,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/about.js": 7,
+      "multi ./pages/index.js": 8,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js": 9,
+      "multi ./pages/post.js": 10,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/post.js": 11,
+      "external \"next/router\"": 12,
       "multi node_modules/next/dist/pages/_app.js": 13,
       "node_modules/next/dist/pages/_app.js": 14,
       "external \"next/app\"": 15,
@@ -51,27 +51,21 @@
   },
   "chunks": {
     "byName": {
-      "static/fe9e07f9-d08a-4d79-b8fe-7ad8a2af9948/pages/about.js": 0,
-      "static/fe9e07f9-d08a-4d79-b8fe-7ad8a2af9948/pages/index.js": 1,
-      "static/fe9e07f9-d08a-4d79-b8fe-7ad8a2af9948/pages/post.js": 2,
-      "static/fe9e07f9-d08a-4d79-b8fe-7ad8a2af9948/pages/_app.js": 3,
-      "static/fe9e07f9-d08a-4d79-b8fe-7ad8a2af9948/pages/_error.js": 4,
-      "static/fe9e07f9-d08a-4d79-b8fe-7ad8a2af9948/pages/_document.js": 5,
-      "static/6be5f6b9-94ef-422a-ba11-aed189e7b491/pages/about.js": 6,
-      "static/6be5f6b9-94ef-422a-ba11-aed189e7b491/pages/index.js": 7,
-      "static/6be5f6b9-94ef-422a-ba11-aed189e7b491/pages/post.js": 8,
-      "static/6be5f6b9-94ef-422a-ba11-aed189e7b491/pages/_app.js": 9,
-      "static/6be5f6b9-94ef-422a-ba11-aed189e7b491/pages/_error.js": 10,
-      "static/6be5f6b9-94ef-422a-ba11-aed189e7b491/pages/_document.js": 11
+      "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/about.js": 0,
+      "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/index.js": 1,
+      "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/post.js": 2,
+      "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/_app.js": 3,
+      "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/_error.js": 4,
+      "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/_document.js": 5
     },
     "bySource": {},
     "usedIds": [
-      10,
-      11,
-      6,
-      7,
-      8,
-      9
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
     ]
   }
 }

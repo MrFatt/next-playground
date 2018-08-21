@@ -21,5 +21,10 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-markdown": "^3.4.1"
+  },
+  "devDependencies": {
+    "del": "latest",
+    "recursive-copy": "latest",
+    "mkdirp-then": "latest"
   }
 }
