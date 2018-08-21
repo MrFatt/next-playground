@@ -4,11 +4,11 @@ import fetch from "isomorphic-unfetch";
 import MyLayout from "../components/MyLayout";
 
 const PostLink = ({ show }) => {
-  const backendUrl = process.env.BACKEND_URL;
+  const backendUrl = process.env.BACKEND_URL || "";
   return (
     <div>
       <li>
-        <Link href={`/${backendUrl}/post/${show.id}`}>
+        <Link href={`${backendUrl}/post/${show.id}`}>
           <a>{show.name}</a>
         </Link>
       </li>
