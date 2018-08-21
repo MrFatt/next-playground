@@ -1,7 +1,7 @@
 const fetch = require("isomorphic-unfetch");
 
 module.exports = {
-  assetPrefix: process.env.NODE_ENV === "production" ? "/{reponame}" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/next-playground" : "",
   exportPathMap: async function() {
     const res = await fetch("https://api.tvmaze.com/search/shows?q=batman");
     const shows = await res.json();

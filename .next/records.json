@@ -254,7 +254,17 @@
       "static/eae06432-07e9-4995-b846-dcd903a72c0d/pages/index.js": 9,
       "static/eae06432-07e9-4995-b846-dcd903a72c0d/pages/post.js": 10,
       "static/eae06432-07e9-4995-b846-dcd903a72c0d/pages/_app.js": 11,
-      "static/eae06432-07e9-4995-b846-dcd903a72c0d/pages/_error.js": 12
+      "static/eae06432-07e9-4995-b846-dcd903a72c0d/pages/_error.js": 12,
+      "static/75511038-807e-4b67-a4df-91d805ecfc02/pages/about.js": 3,
+      "static/75511038-807e-4b67-a4df-91d805ecfc02/pages/index.js": 4,
+      "static/75511038-807e-4b67-a4df-91d805ecfc02/pages/post.js": 5,
+      "static/75511038-807e-4b67-a4df-91d805ecfc02/pages/_app.js": 6,
+      "static/75511038-807e-4b67-a4df-91d805ecfc02/pages/_error.js": 7,
+      "static/fd6c8937-92cc-45bf-a9dc-fee36a1cbaf6/pages/about.js": 8,
+      "static/fd6c8937-92cc-45bf-a9dc-fee36a1cbaf6/pages/index.js": 9,
+      "static/fd6c8937-92cc-45bf-a9dc-fee36a1cbaf6/pages/post.js": 10,
+      "static/fd6c8937-92cc-45bf-a9dc-fee36a1cbaf6/pages/_app.js": 11,
+      "static/fd6c8937-92cc-45bf-a9dc-fee36a1cbaf6/pages/_error.js": 12
     },
     "bySource": {},
     "usedIds": [
