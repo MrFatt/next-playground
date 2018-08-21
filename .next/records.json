@@ -236,18 +236,23 @@
       "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/index.js": 4,
       "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/post.js": 5,
       "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/_app.js": 6,
-      "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/_error.js": 7
+      "static/11a660f8-c596-4255-9b7f-fbdef14b9216/pages/_error.js": 7,
+      "static/90c04936-87c5-421e-9e17-c9877cd713f7/pages/about.js": 8,
+      "static/90c04936-87c5-421e-9e17-c9877cd713f7/pages/index.js": 9,
+      "static/90c04936-87c5-421e-9e17-c9877cd713f7/pages/post.js": 10,
+      "static/90c04936-87c5-421e-9e17-c9877cd713f7/pages/_app.js": 11,
+      "static/90c04936-87c5-421e-9e17-c9877cd713f7/pages/_error.js": 12
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
+      10,
+      11,
+      12,
       2,
-      3,
-      4,
-      5,
-      6,
-      7
+      8,
+      9
     ]
   }
 }
