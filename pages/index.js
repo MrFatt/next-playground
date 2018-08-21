@@ -3,15 +3,18 @@ import fetch from "isomorphic-unfetch";
 
 import MyLayout from "../components/MyLayout";
 
-const PostLink = ({ show }) => (
-  <div>
-    <li>
-      <Link prefetch as={`/post/${show.id}`} href={`/post/${show.id}`}>
-        <a>{show.name}</a>
-      </Link>
-    </li>
-  </div>
-);
+const PostLink = ({ show }) => {
+  const backendUrl = process.env.BACKEND_URL || "";
+  return (
+    <div>
+      <li>
+        <Link prefetch as={`${backendUrl}/post/${show.id}`} href={`/post/${show.id}`}>
+          <a>{show.name}</a>
+        </Link>
+      </li>
+    </div>
+  );
+};
 
 const Index = ({ shows }) => (
   <MyLayout>

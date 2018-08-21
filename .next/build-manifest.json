@@ -3,32 +3,32 @@
   "pages": {
     "/about": [
       "static/runtime/webpack-96d52efe1a3b90f63e41.js",
-      "static/chunks/00f3f94a7abb94f61c28.js",
+      "static/chunks/124c26577c5328895072.js",
       "static/runtime/main-2dcdde41d33904e7b5e1.js"
     ],
     "/index": [
       "static/runtime/webpack-96d52efe1a3b90f63e41.js",
-      "static/chunks/00f3f94a7abb94f61c28.js",
+      "static/chunks/124c26577c5328895072.js",
       "static/runtime/main-2dcdde41d33904e7b5e1.js"
     ],
     "/post": [
       "static/runtime/webpack-96d52efe1a3b90f63e41.js",
-      "static/chunks/00f3f94a7abb94f61c28.js",
+      "static/chunks/124c26577c5328895072.js",
       "static/runtime/main-2dcdde41d33904e7b5e1.js"
     ],
     "/_app": [
       "static/runtime/webpack-96d52efe1a3b90f63e41.js",
-      "static/chunks/00f3f94a7abb94f61c28.js",
+      "static/chunks/124c26577c5328895072.js",
       "static/runtime/main-2dcdde41d33904e7b5e1.js"
     ],
     "/_error": [
       "static/runtime/webpack-96d52efe1a3b90f63e41.js",
-      "static/chunks/00f3f94a7abb94f61c28.js",
+      "static/chunks/124c26577c5328895072.js",
       "static/runtime/main-2dcdde41d33904e7b5e1.js"
     ],
     "/": [
       "static/runtime/webpack-96d52efe1a3b90f63e41.js",
-      "static/chunks/00f3f94a7abb94f61c28.js",
+      "static/chunks/124c26577c5328895072.js",
       "static/runtime/main-2dcdde41d33904e7b5e1.js"
     ]
   }

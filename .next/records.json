@@ -111,7 +111,9 @@
       "node_modules/@babel/runtime/helpers/iterableToArray.js": 107,
       "node_modules/@babel/runtime/helpers/nonIterableSpread.js": 108,
       "node_modules/next/dist/lib/side-effect.js": 109,
-      "node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js": 110
+      "node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js": 110,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!components/MyLayout.js": 12,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!components/Header.js": 111
     },
     "usedIds": {
       "0": 0,
@@ -224,7 +226,8 @@
       "107": 107,
       "108": 108,
       "109": 109,
-      "110": 110
+      "110": 110,
+      "111": 111
     }
   },
   "chunks": {
@@ -241,7 +244,17 @@
       "static/90c04936-87c5-421e-9e17-c9877cd713f7/pages/index.js": 9,
       "static/90c04936-87c5-421e-9e17-c9877cd713f7/pages/post.js": 10,
       "static/90c04936-87c5-421e-9e17-c9877cd713f7/pages/_app.js": 11,
-      "static/90c04936-87c5-421e-9e17-c9877cd713f7/pages/_error.js": 12
+      "static/90c04936-87c5-421e-9e17-c9877cd713f7/pages/_error.js": 12,
+      "static/537cc5df-3d14-44a2-8c93-66b505f79c13/pages/about.js": 3,
+      "static/537cc5df-3d14-44a2-8c93-66b505f79c13/pages/index.js": 4,
+      "static/537cc5df-3d14-44a2-8c93-66b505f79c13/pages/post.js": 5,
+      "static/537cc5df-3d14-44a2-8c93-66b505f79c13/pages/_app.js": 6,
+      "static/537cc5df-3d14-44a2-8c93-66b505f79c13/pages/_error.js": 7,
+      "static/eae06432-07e9-4995-b846-dcd903a72c0d/pages/about.js": 8,
+      "static/eae06432-07e9-4995-b846-dcd903a72c0d/pages/index.js": 9,
+      "static/eae06432-07e9-4995-b846-dcd903a72c0d/pages/post.js": 10,
+      "static/eae06432-07e9-4995-b846-dcd903a72c0d/pages/_app.js": 11,
+      "static/eae06432-07e9-4995-b846-dcd903a72c0d/pages/_error.js": 12
     },
     "bySource": {},
     "usedIds": [
