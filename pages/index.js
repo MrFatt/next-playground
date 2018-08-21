@@ -8,7 +8,7 @@ const PostLink = ({ show }) => {
   return (
     <div>
       <li>
-        <Link prefetch as={`${backendUrl}/post/${show.id}`} href={`/post/${show.id}`}>
+        <Link href={`/${backendUrl}/post/${show.id}`}>
           <a>{show.name}</a>
         </Link>
       </li>

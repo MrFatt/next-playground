@@ -26,6 +26,7 @@
   "devDependencies": {
     "del": "latest",
     "recursive-copy": "latest",
-    "mkdirp-then": "latest"
+    "mkdirp-then": "latest",
+    "babel-plugin-transform-define": "^1.3.0"
   }
 }
