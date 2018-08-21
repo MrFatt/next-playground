@@ -8,10 +8,10 @@ const Header = () => {
   const backendUrl = process.env.BACKEND_URL;
   return (
     <div>
-      <Link href="/" as={backendUrl + "/about"}>
+      <Link href="/" >
         <a style={lintStyle}>Home</a>
       </Link>
-      <Link href="/about" as={backendUrl + "/about"}>
+      <Link href="/about">
         <a style={lintStyle}>About</a>
       </Link>
     </div>
