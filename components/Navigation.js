@@ -1,5 +1,6 @@
 import { ButtonBase } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
+import Link from 'next/link';
 
 const styles = () => ({
   button: {
@@ -16,12 +17,12 @@ const Navigation = props => {
 
   return (
     <div>
-      <ButtonBase className={button} href={`${backendurl}/`}>
-        首页
-      </ButtonBase>
-      <ButtonBase className={button} href={`${backendurl}/about`}>
-        关于我们
-      </ButtonBase>
+      <Link href={`${backendurl}/`}>
+        <ButtonBase className={button}>首页</ButtonBase>
+      </Link>
+      <Link href={`${backendurl}/about`}>
+        <ButtonBase className={button}>关于我们</ButtonBase>
+      </Link>
     </div>
   );
 };
