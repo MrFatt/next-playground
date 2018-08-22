@@ -1,31 +1,33 @@
-import Link from "next/link";
-
-const lintStyle = {
-  marginRight: 15
-};
+import { Tab, Tabs, Icon } from "@material-ui/core";
 
 const logoStyle = {
-  maxHeight: 40,
-  width: 82
+  maxHeight: 40
 };
 
 const Header = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center"
+      }}
+    >
       <div className="header-container">
         <img style={logoStyle} src="/static/logo.png" />
       </div>
       <div className="header-container">
-        <Link href="/">
-          <a style={lintStyle}>Home</a>
-        </Link>
-        <Link href={`${process.env.BACKEND_URL}/about`}>
-          <a style={lintStyle}>About</a>
-        </Link>
+        <Tabs value={false}>
+          <Tab label="主页" href="/" />
+          <Tab label="关于我们" href={`${process.env.BACKEND_URL}/about`} />
+        </Tabs>
       </div>
+      <a href="https://github.com/TWNTF">
+        <img src="/static/GitHub-Mark-32px.png" />
+      </a>
       <style global jsx>{`
         .header-container {
-          display: inline-block;
+          display: flex;
         }
       `}</style>
     </div>
