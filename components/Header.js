@@ -1,6 +1,6 @@
 import Navigation from "./Navigation";
 
-const Header = () => {
+export default () => {
   const backendurl = process.env.BACKEND_URL;
   return (
     <div
@@ -21,4 +21,3 @@ const Header = () => {
   );
 };
 
-export default Header;

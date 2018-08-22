@@ -1,27 +1,14 @@
-import Link from "next/link";
 import fetch from "isomorphic-unfetch";
 
 import MyLayout from "../components/MyLayout";
-
-const PostLink = ({ show }) => {
-  const backendUrl = process.env.BACKEND_URL || "";
-  return (
-    <div>
-      <li>
-        <Link href={`${backendUrl}/post/${show.id}`}>
-          <a>{show.name}</a>
-        </Link>
-      </li>
-    </div>
-  );
-};
+import PostOverview from "../components/PostOverview";
 
 const Index = ({ shows }) => (
   <MyLayout>
     <h1>Batman TV Shows</h1>
     <ul>
       {shows.map(({ show }) => (
-        <PostLink key={show.id} show={show} />
+        <PostOverview key={show.id} show={show} />
       ))}
     </ul>
     <style global jsx>{`

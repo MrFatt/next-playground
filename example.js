@@ -1,273 +1,406 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Hidden from '@material-ui/core/Hidden';
-import Button from '@material-ui/core/Button';
-import Divider from '@material-ui/core/Divider';
-import Markdown from './Markdown';
-import post1 from './blog-post.1.md';
-import post2 from './blog-post.2.md';
-import post3 from './blog-post.3.md';
-
-const styles = theme => ({
-  layout: {
-    width: 'auto',
-    marginLeft: theme.spacing.unit * 3,
-    marginRight: theme.spacing.unit * 3,
-    [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
-      width: 1100,
-      marginLeft: 'auto',
-      marginRight: 'auto',
-    },
-  },
-  toolbarMain: {
-    borderBottom: `1px solid ${theme.palette.grey[300]}`,
-  },
-  toolbarTitle: {
-    flex: 1,
-  },
-  toolbarSecondary: {
-    justifyContent: 'space-between',
-  },
-  mainFeaturedPost: {
-    backgroundColor: theme.palette.grey[800],
-    color: theme.palette.common.white,
-    marginBottom: theme.spacing.unit * 4,
-  },
-  mainFeaturedPostContent: {
-    padding: `${theme.spacing.unit * 6}px`,
-    [theme.breakpoints.up('md')]: {
-      paddingRight: 0,
-    },
-  },
-  mainGrid: {
-    marginTop: theme.spacing.unit * 3,
-  },
-  card: {
-    display: 'flex',
-  },
-  cardDetails: {
-    flex: 1,
-  },
-  cardMedia: {
-    width: 160,
-  },
-  markdown: {
-    padding: `${theme.spacing.unit * 3}px 0`,
-  },
-  sidebarAboutBox: {
-    padding: theme.spacing.unit * 2,
-    backgroundColor: theme.palette.grey[200],
-  },
-  sidebarSection: {
-    marginTop: theme.spacing.unit * 3,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    marginTop: theme.spacing.unit * 8,
-    padding: `${theme.spacing.unit * 6}px 0`,
-  },
-});
-
-const sections = [
-  'Technology',
-  'Design',
-  'Culture',
-  'Business',
-  'Politics',
-  'Opinion',
-  'Science',
-  'Health',
-  'Style',
-  'Travel',
-];
-
-const featuredPosts = [
+[
   {
-    title: 'Featured post',
-    date: 'Nov 12',
-    description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+    score: 23.308033,
+    show: {
+      id: 975,
+      url: "http://www.tvmaze.com/shows/975/batman",
+      name: "Batman",
+      type: "Scripted",
+      language: "English",
+      genres: ["Comedy", "Action", "Science-Fiction"],
+      status: "Ended",
+      runtime: 30,
+      premiered: "1966-01-12",
+      officialSite: null,
+      schedule: { time: "19:30", days: ["Thursday"] },
+      rating: { average: 8.2 },
+      weight: 86,
+      network: {
+        id: 3,
+        name: "ABC",
+        country: {
+          name: "United States",
+          code: "US",
+          timezone: "America/New_York"
+        }
+      },
+      webChannel: null,
+      externals: { tvrage: 2719, thetvdb: 77871, imdb: "tt0059968" },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/6/16463.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/6/16463.jpg"
+      },
+      summary:
+        "<p>Wealthy entrepreneur Bruce Wayne and his ward Dick Grayson lead a double life: they are actually crime fighting duo Batman and Robin. A secret Batpole in the Wayne mansion leads to the Batcave, where Police Commissioner Gordon often calls with the latest emergency threatening Gotham City. Racing to the scene of the crime in the Batmobile, Batman and Robin must (with the help of their trusty Bat-utility-belt) thwart the efforts of a variety of master criminals, including Catwoman, Egghead, The Joker, King Tut, The Penguin, and The Riddler.</p>",
+      updated: 1523760926,
+      _links: {
+        self: { href: "http://api.tvmaze.com/shows/975" },
+        previousepisode: { href: "http://api.tvmaze.com/episodes/95649" }
+      }
+    }
   },
   {
-    title: 'Post title',
-    date: 'Nov 11',
-    description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+    score: 16.665998,
+    show: {
+      id: 481,
+      url: "http://www.tvmaze.com/shows/481/the-batman",
+      name: "The Batman",
+      type: "Animation",
+      language: "English",
+      genres: ["Action", "Adventure", "Science-Fiction"],
+      status: "Ended",
+      runtime: 30,
+      premiered: "2004-09-11",
+      officialSite: null,
+      schedule: { time: "10:30", days: ["Saturday"] },
+      rating: { average: 8.3 },
+      weight: 0,
+      network: {
+        id: 5,
+        name: "The CW",
+        country: {
+          name: "United States",
+          code: "US",
+          timezone: "America/New_York"
+        }
+      },
+      webChannel: null,
+      externals: { tvrage: 5602, thetvdb: 73180, imdb: "tt0398417" },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/3/9370.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/3/9370.jpg"
+      },
+      summary:
+        "<p>Hidden in the shadows, The Batman casts a protective eye while tracking the thugs, thieves and criminal masterminds that claim Gotham City's dark alleys each night. In one magnificent swoop, he descends up on opponents and battles with a fierceness that seems almost inhuman. This is the young Bruce Wayne who assumes the role of Gotham's greatest defender in a fresh retelling of the Dark Knight's beginnings.</p><p>With incredible gadgets, awesome animation and a cool new vibe, these 13 exciting episodes from the hit series showcase The Batman taking on your favourite villains – The Joker, The Penguin, Mr. Freeze, Catwoman, Bane – and new crazies you'll love to hate!</p>",
+      updated: 1520352738,
+      _links: {
+        self: { href: "http://api.tvmaze.com/shows/481" },
+        previousepisode: { href: "http://api.tvmaze.com/episodes/43721" }
+      }
+    }
   },
+  {
+    score: 14.85671,
+    show: {
+      id: 757,
+      url: "http://www.tvmaze.com/shows/757/batman-the-animated-series",
+      name: "Batman: The Animated Series",
+      type: "Animation",
+      language: "English",
+      genres: ["Action", "Adventure", "Science-Fiction"],
+      status: "Ended",
+      runtime: 30,
+      premiered: "1992-09-05",
+      officialSite: null,
+      schedule: { time: "10:00", days: ["Saturday"] },
+      rating: { average: 9.2 },
+      weight: 79,
+      network: {
+        id: 4,
+        name: "FOX",
+        country: {
+          name: "United States",
+          code: "US",
+          timezone: "America/New_York"
+        }
+      },
+      webChannel: null,
+      externals: { tvrage: 2721, thetvdb: 76168, imdb: "tt0103359" },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/6/15229.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/6/15229.jpg"
+      },
+      summary:
+        "<p>Experience the thrills of vigilante justice as millionaire playboy Bruce Wayne and alter-ego Batman protect the streets of Gotham City from a host of villains including archnemesis The Joker, deadly-beautiful Poison Ivy and primitive Killer Croc in a fresh take on super hero storytelling. Intelligent, dramatic stories, unique characters and sharp dialog shaped this edgy TV series into an Emmy®-winning powerhouse that brought the Caped Crusader out of the dark alleys of TV history and into the present for fans of all ages.</p>",
+      updated: 1532948381,
+      _links: {
+        self: { href: "http://api.tvmaze.com/shows/757" },
+        previousepisode: { href: "http://api.tvmaze.com/episodes/66866" }
+      }
+    }
+  },
+  {
+    score: 12.922227,
+    show: {
+      id: 5951,
+      url: "http://www.tvmaze.com/shows/5951/the-new-batman-adventures",
+      name: "The New Batman Adventures",
+      type: "Animation",
+      language: "English",
+      genres: ["Science-Fiction"],
+      status: "Ended",
+      runtime: null,
+      premiered: "1997-09-13",
+      officialSite: null,
+      schedule: { time: "", days: [] },
+      rating: { average: 8.6 },
+      weight: 0,
+      network: {
+        id: 71,
+        name: "The WB",
+        country: {
+          name: "United States",
+          code: "US",
+          timezone: "America/New_York"
+        }
+      },
+      webChannel: null,
+      externals: { tvrage: 2720, thetvdb: 77084, imdb: "tt0118266" },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/23/58624.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/23/58624.jpg"
+      },
+      summary:
+        "<p>The New Batman Adventures comes from the creators of Batman and Superman. This series was created because Fox had not lived up to the contract that they had given Batman, so the WB decided to give the show another chance. Bruce Timm then went back and decided to re-design all of the characters from Batman and ended up revamping the series all-together.</p><p>(Source: animeflavor)</p>",
+      updated: 1494693177,
+      _links: {
+        self: { href: "http://api.tvmaze.com/shows/5951" },
+        previousepisode: { href: "http://api.tvmaze.com/episodes/355338" }
+      }
+    }
+  },
+  {
+    score: 12.672595,
+    show: {
+      id: 11464,
+      url: "http://www.tvmaze.com/shows/11464/batman-unlimited",
+      name: "Batman Unlimited",
+      type: "Animation",
+      language: "English",
+      genres: ["Action", "Children", "Science-Fiction"],
+      status: "Ended",
+      runtime: 4,
+      premiered: "2015-05-04",
+      officialSite: "https://www.youtube.com/channel/UCyu8StPfZWapR6rfW_JgqcA",
+      schedule: { time: "", days: [] },
+      rating: { average: null },
+      weight: 0,
+      network: null,
+      webChannel: { id: 21, name: "YouTube", country: null },
+      externals: { tvrage: null, thetvdb: 301558, imdb: null },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/38/96515.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/38/96515.jpg"
+      },
+      summary:
+        "<p>A webseries began airing on DC Kids' YouTube channel on May 4, 2015.</p>",
+      updated: 1529747391,
+      _links: {
+        self: { href: "http://api.tvmaze.com/shows/11464" },
+        previousepisode: { href: "http://api.tvmaze.com/episodes/896355" }
+      }
+    }
+  },
+  {
+    score: 12.672595,
+    show: {
+      id: 504,
+      url: "http://www.tvmaze.com/shows/504/batman-beyond",
+      name: "Batman Beyond",
+      type: "Animation",
+      language: "English",
+      genres: ["Action", "Adventure", "Science-Fiction"],
+      status: "Ended",
+      runtime: 30,
+      premiered: "1999-01-10",
+      officialSite: null,
+      schedule: { time: "", days: ["Saturday"] },
+      rating: { average: 9 },
+      weight: 0,
+      network: {
+        id: 71,
+        name: "The WB",
+        country: {
+          name: "United States",
+          code: "US",
+          timezone: "America/New_York"
+        }
+      },
+      webChannel: null,
+      externals: { tvrage: 2722, thetvdb: 75417, imdb: "tt0147746" },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/4/10842.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/4/10842.jpg"
+      },
+      summary:
+        "<p><b>Batman Beyond</b> tells the story of Terry McGinnis was just an ordinary teenager...until his father was mysteriously murdered. Suspecting foul play at his father's company Wayne/Powers Corporation, Terry meets Bruce Wayne and learns a secret identity hidden for decades. Now too old to battle injustice, Wayne is a bitter shell of his former self and refuses to help. So Terry does what any brash young kid would do: steal the Batsuit and take matters into his own hands! Vowing to avenge his father's death, Terry dons the high-tech suit - tricked out with jetpacks for flying, a supersensitive microphone for eavesdropping and even camouflage capabilities - in search of his father's assassin.</p>",
+      updated: 1531187949,
+      _links: {
+        self: { href: "http://api.tvmaze.com/shows/504" },
+        previousepisode: { href: "http://api.tvmaze.com/episodes/45957" }
+      }
+    }
+  },
+  {
+    score: 12.438846,
+    show: {
+      id: 3557,
+      url: "http://www.tvmaze.com/shows/3557/beware-the-batman",
+      name: "Beware the Batman",
+      type: "Animation",
+      language: "English",
+      genres: ["Action", "Adventure", "Science-Fiction"],
+      status: "Ended",
+      runtime: 30,
+      premiered: "2013-07-14",
+      officialSite: null,
+      schedule: { time: "02:30", days: ["Sunday"] },
+      rating: { average: null },
+      weight: 0,
+      network: {
+        id: 11,
+        name: "Cartoon Network",
+        country: {
+          name: "United States",
+          code: "US",
+          timezone: "America/New_York"
+        }
+      },
+      webChannel: null,
+      externals: { tvrage: 30092, thetvdb: 258331, imdb: "tt2329077" },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/18/46698.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/18/46698.jpg"
+      },
+      summary:
+        "<p>In this new interpretation of the Batman legend, Bruce Wayne has recently returned to Gotham. With the aide of his butler and former SAS operative Alfred Pennyworth, Bruce takes on the guise of Batman and fights the villains of Gotham City. Helping him is Katana, a young martial artist who Alfred hires to assist Bruce when he realizes that he's too old to serve in the field.</p>",
+      updated: 1520574080,
+      _links: {
+        self: { href: "http://api.tvmaze.com/shows/3557" },
+        previousepisode: { href: "http://api.tvmaze.com/episodes/232900" }
+      }
+    }
+  },
+  {
+    score: 10.377318,
+    show: {
+      id: 22309,
+      url: "http://www.tvmaze.com/shows/22309/batman-black-and-white",
+      name: "Batman: Black and White",
+      type: "Animation",
+      language: "English",
+      genres: ["Action", "Adventure", "Science-Fiction"],
+      status: "Ended",
+      runtime: null,
+      premiered: "2008-12-08",
+      officialSite: null,
+      schedule: { time: "", days: ["Thursday"] },
+      rating: { average: null },
+      weight: 15,
+      network: null,
+      webChannel: { id: 3, name: "Amazon Prime", country: null },
+      externals: { tvrage: null, thetvdb: 103851, imdb: "tt1458796" },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/81/204143.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/81/204143.jpg"
+      },
+      summary:
+        "<p>This collection includes animated adaptations of ten short stories, bundled into five episodes, that take place in and around Gotham City, featuring Batman and his nefarious villains. Each story comes from the unique perspective of different writers and artists, applying their spin on the Batman universe.</p>",
+      updated: 1526271793,
+      _links: {
+        self: { href: "http://api.tvmaze.com/shows/22309" },
+        previousepisode: { href: "http://api.tvmaze.com/episodes/970807" }
+      }
+    }
+  },
+  {
+    score: 10.377318,
+    show: {
+      id: 33618,
+      url: "http://www.tvmaze.com/shows/33618/the-adventures-of-batman",
+      name: "The Adventures of Batman",
+      type: "Animation",
+      language: "English",
+      genres: ["Action", "Adventure"],
+      status: "Ended",
+      runtime: 15,
+      premiered: "1968-09-14",
+      officialSite: null,
+      schedule: { time: "10:30", days: ["Saturday"] },
+      rating: { average: null },
+      weight: 34,
+      network: {
+        id: 2,
+        name: "CBS",
+        country: {
+          name: "United States",
+          code: "US",
+          timezone: "America/New_York"
+        }
+      },
+      webChannel: null,
+      externals: { tvrage: null, thetvdb: 248509, imdb: null },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/136/342479.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/136/342479.jpg"
+      },
+      summary:
+        "<p><b>The Adventures of Batman</b>, with Robin, the Boy Wonder! Batman and Robin, the Dynamic Duo against crime and corruption, whose real identities as millionaire philanthropist Bruce Wayne and his young ward Dick Grayson and known only to Alfred, the faithful butler. Ever alert, they respond swiftly to a signal from the police, and moments later, from the secret Batcave deep beneath Wayne Manor, they roar out to protect life, limb and property as Batman and Robin, caped crimefighters! Batman and Robin, scourge of Gotham City's kooky criminals: The Joker, Clown Prince of Crime - The Penguin, pudgy purveyor of perfidy - and the cool, cruel, Mr. Freeze! Watch out, villains, here come... Batman and Robin!</p>",
+      updated: 1512083956,
+      _links: {
+        self: { href: "http://api.tvmaze.com/shows/33618" },
+        previousepisode: { href: "http://api.tvmaze.com/episodes/1364486" }
+      }
+    }
+  },
+  {
+    score: 10.377318,
+    show: {
+      id: 19752,
+      url: "http://www.tvmaze.com/shows/19752/the-new-adventures-of-batman",
+      name: "The New Adventures of Batman",
+      type: "Animation",
+      language: "English",
+      genres: ["Science-Fiction"],
+      status: "Ended",
+      runtime: 30,
+      premiered: "1977-02-10",
+      officialSite: null,
+      schedule: { time: "", days: [] },
+      rating: { average: null },
+      weight: 14,
+      network: {
+        id: 2,
+        name: "CBS",
+        country: {
+          name: "United States",
+          code: "US",
+          timezone: "America/New_York"
+        }
+      },
+      webChannel: null,
+      externals: { tvrage: null, thetvdb: 70909, imdb: "tt0075543" },
+      image: {
+        medium:
+          "http://static.tvmaze.com/uploads/images/medium_portrait/69/174489.jpg",
+        original:
+          "http://static.tvmaze.com/uploads/images/original_untouched/69/174489.jpg"
+      },
+      summary:
+        "<p>The New Adventures of Batman is an animated series produced by Filmation in 1977 featuring the DC Comics superheroes Batman and Robin, and Batgirl. In The New Adventures of Batman, the \"Dynamic Duo\" fights crime in Gotham City, encountering the classic Batman rogues gallery as well as some original villains. Complicating matters is Bat-Mite, a well meaning imp from another dimension called Ergo, who considers himself Batman's biggest fan. As a result, he wears a variant of Batman's costume and attempts to help him, only to often create more problems (although he is occasionally an asset). Missing is Alfred, the faithful butler of Batman's alter ego Bruce Wayne</p>",
+      updated: 1494693254,
+      _links: {
+        self: { href: "http://api.tvmaze.com/shows/19752" },
+        previousepisode: { href: "http://api.tvmaze.com/episodes/884694" }
+      }
+    }
+  }
 ];
-
-const posts = [post1, post2, post3];
-
-const archives = [
-  'March 2020',
-  'February 2020',
-  'January 2020',
-  'December 2019',
-  'November 2019',
-  'October 2019',
-  'September 2019',
-  'August 2019',
-  'July 2019',
-  'June 2019',
-  'May 2019',
-  'April 2019',
-];
-
-const social = ['GitHub', 'Twitter', 'Facebook'];
-
-function Blog(props) {
-  const { classes } = props;
-
-  return (
-    <React.Fragment>
-      <CssBaseline />
-      <div className={classes.layout}>
-        <Toolbar className={classes.toolbarMain}>
-          <Button size="small">Subscribe</Button>
-          <Typography
-            variant="headline"
-            color="inherit"
-            align="center"
-            noWrap
-            className={classes.toolbarTitle}
-          >
-            Blog
-          </Typography>
-          <IconButton>
-            <SearchIcon />
-          </IconButton>
-          <Button variant="outlined" size="small">
-            Sign up
-          </Button>
-        </Toolbar>
-        <Toolbar variant="dense" className={classes.toolbarSecondary}>
-          {sections.map(section => (
-            <Typography color="inherit" noWrap key={section}>
-              {section}
-            </Typography>
-          ))}
-        </Toolbar>
-        <main>
-          {/* Main featured post */}
-          <Paper className={classes.mainFeaturedPost}>
-            <Grid container>
-              <Grid item md={6}>
-                <div className={classes.mainFeaturedPostContent}>
-                  <Typography variant="display2" color="inherit" gutterBottom>
-                    Title of a longer featured blog post
-                  </Typography>
-                  <Typography variant="headline" color="inherit" paragraph>
-                    Multiple lines of text that form the lede, informing new readers quickly and
-                    efficiently about what&apos;s most interesting in this post&apos;s contents.
-                  </Typography>
-                  <Typography variant="title" color="inherit">
-                    Continue reading...
-                  </Typography>
-                </div>
-              </Grid>
-            </Grid>
-          </Paper>
-          {/* End main featured post */}
-          {/* Sub featured posts */}
-          <Grid container spacing={40} className={classes.cardGrid}>
-            {featuredPosts.map(post => (
-              <Grid item key={post.title} xs={12} md={6}>
-                <Card className={classes.card}>
-                  <div className={classes.cardDetails}>
-                    <CardContent>
-                      <Typography variant="headline">{post.title}</Typography>
-                      <Typography variant="subheading" color="textSecondary">
-                        {post.date}
-                      </Typography>
-                      <Typography variant="subheading" paragraph>
-                        {post.description}
-                      </Typography>
-                      <Typography variant="subheading" color="primary">
-                        Continue reading...
-                      </Typography>
-                    </CardContent>
-                  </div>
-                  <Hidden xsDown>
-                    <CardMedia
-                      className={classes.cardMedia}
-                      image="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_164edaf95ee%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_164edaf95ee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.32500076293945%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" // eslint-disable-line max-len
-                      title="Image title"
-                    />
-                  </Hidden>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-          {/* End sub featured posts */}
-          <Grid container spacing={40} className={classes.mainGrid}>
-            {/* Main content */}
-            <Grid item xs={12} md={8}>
-              <Typography variant="title" gutterBottom>
-                From the Firehose
-              </Typography>
-              <Divider />
-              {posts.map(post => (
-                <Markdown className={classes.markdown} key={post.substring(0, 40)}>
-                  {post}
-                </Markdown>
-              ))}
-            </Grid>
-            {/* End main content */}
-            {/* Sidebar */}
-            <Grid item xs={12} md={4}>
-              <Paper elevation={0} className={classes.sidebarAboutBox}>
-                <Typography variant="title" gutterBottom>
-                  About
-                </Typography>
-                <Typography>
-                  Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit
-                  amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-                </Typography>
-              </Paper>
-              <Typography variant="title" gutterBottom className={classes.sidebarSection}>
-                Archives
-              </Typography>
-              {archives.map(archive => (
-                <Typography key={archive}>{archive}</Typography>
-              ))}
-              <Typography variant="title" gutterBottom className={classes.sidebarSection}>
-                Social
-              </Typography>
-              {social.map(network => (
-                <Typography key={network}>{network}</Typography>
-              ))}
-            </Grid>
-            {/* End sidebar */}
-          </Grid>
-        </main>
-      </div>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="title" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subheading" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-      </footer>
-      {/* End footer */}
-    </React.Fragment>
-  );
-}
-
-Blog.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(Blog);

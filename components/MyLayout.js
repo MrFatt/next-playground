@@ -5,10 +5,20 @@ const localStyle = {
   padding: 20,
 };
 
+const bodyStyle = {
+  width: 1000,
+  marginLeft: "auto",
+  marginRight: "auto",
+  marginTop: 100
+};
+
+
 const MyLayout = (props) => (
   <div style={localStyle}>
     <Header/>
-    {props.children}
+    <div style={bodyStyle}>
+      {props.children}
+    </div>
   </div>
 );
 
