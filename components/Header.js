@@ -1,4 +1,5 @@
-import { Tab, Tabs, Icon } from "@material-ui/core";
+import { Tab, Button } from "@material-ui/core";
+import Link from "next/link";
 
 const logoStyle = {
   maxHeight: 40
@@ -18,10 +19,12 @@ const Header = () => {
         <img style={logoStyle} src={`${backendurl}/static/logo.png`} />
       </div>
       <div className="header-container">
-        <Tabs value={false}>
-          <Tab label="主页" href={`${backendurl}`} />
-          <Tab label="关于我们" href={`${backendurl}/about`} />
-        </Tabs>
+        <Button href={`${backendurl}/`}>
+          首页
+        </Button>
+        <Button href={`${backendurl}/about`}>
+          关于我们
+        </Button>
       </div>
       <a href="https://github.com/TWNTF">
         <img src={`${backendurl}/static/GitHub-Mark-32px.png`} />
