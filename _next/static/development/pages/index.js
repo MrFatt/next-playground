@@ -223,6 +223,13 @@ var styles = {
     maxWidth: 140
   },
   content: {
+    "&:hover": {
+      color: "blue",
+      opacity: 0.6,
+      cursor: "pointer"
+    }
+  },
+  summary: {
     lineClamp: 3,
     boxOrient: "vertical",
     display: "box",
@@ -241,40 +248,41 @@ var styles = {
     href: "".concat(backendurl, "/post/").concat(id),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 48
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     className: classes.card,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 49
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardMedia"], {
     className: classes.media,
     image: medium || "/static/GitHub-Mark-64px.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 50
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardContent"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 54
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     gutterBottom: true,
     variant: "title",
     component: "h2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    }
-  }, name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
-    component: "p",
     className: classes.content,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 55
+    }
+  }, name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    component: "p",
+    className: [classes.content, classes.summary],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
     }
   }, summary.replace(/<[/]?[pb]>/g, "")))));
 }));
