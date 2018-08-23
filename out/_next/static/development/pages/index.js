@@ -142,8 +142,9 @@ var _jsxFileName = "/Users/yli149/Documents/workspace/next-playground/components
 var styles = function styles() {
   return {
     button: {
-      marginRight: 20,
-      marginLeft: 20
+      paddingRight: 20,
+      paddingLeft: 20,
+      fontSize: 18
     }
   };
 };
@@ -154,31 +155,31 @@ var Navigation = function Navigation(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "".concat(backendurl, "/"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["ButtonBase"], {
     className: button,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     }
   }, "\u9996\u9875")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "".concat(backendurl, "/about"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["ButtonBase"], {
     className: button,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     }
   }, "\u5173\u4E8E\u6211\u4EEC")));
 };
@@ -216,24 +217,45 @@ var styles = {
     paddingLeft: 20,
     paddingTop: 10,
     paddingBottom: 10,
-    maxHeight: 140
+    height: 160
   },
   media: {
     width: "100%",
     maxWidth: 140
   },
   content: {
+    paddingTop: 0,
+    paddingBottom: 0,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    "&:last-child": {
+      paddingBottom: 0
+    }
+  },
+  hover: {
     "&:hover": {
       color: "blue",
       opacity: 0.6,
       cursor: "pointer"
     }
   },
+  name: {
+    height: 20
+  },
   summary: {
     lineClamp: 3,
     boxOrient: "vertical",
     display: "box",
+    height: "auto",
     overflow: "hidden"
+  },
+  meta: {
+    marginTop: 10,
+    height: 20,
+    "&:hover": {
+      cursor: "default"
+    }
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(styles)(function (props) {
@@ -242,49 +264,58 @@ var styles = {
       medium = _props$show.image.medium,
       summary = _props$show.summary,
       name = _props$show.name,
-      id = _props$show.id;
+      id = _props$show.id,
+      premiered = _props$show.premiered;
   var backendurl = "";
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "".concat(backendurl, "/post/").concat(id),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 68
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     className: classes.card,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 69
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardMedia"], {
     className: classes.media,
     image: medium || "/static/GitHub-Mark-64px.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 70
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardContent"], {
+    className: classes.content,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 74
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     gutterBottom: true,
     variant: "title",
     component: "h2",
-    className: classes.content,
+    className: [classes.hover, classes.name],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 75
     }
   }, name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     component: "p",
-    className: [classes.content, classes.summary],
+    className: [classes.hover, classes.summary],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 83
     }
-  }, summary.replace(/<[/]?[pb]>/g, "")))));
+  }, summary.replace(/<[/]?[pb]>/g, "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    component: "p",
+    className: classes.meta,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    }
+  }, "premiered at: ", premiered))));
 }));
 
 /***/ }),
@@ -49664,13 +49695,13 @@ var Index = function Index(_ref) {
       fileName: _jsxFileName,
       lineNumber: 8
     },
-    className: "jsx-4028648676"
+    className: "jsx-3317253252"
   }, "Batman TV Shows"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
-    className: "jsx-4028648676"
+    className: "jsx-3317253252"
   }, shows.map(function (_ref2) {
     var show = _ref2.show;
     return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_PostOverview__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -49682,8 +49713,8 @@ var Index = function Index(_ref) {
       }
     });
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    styleId: "4028648676",
-    css: "h1,a{font-family:\"Arial\";}ul{padding:0;}li{list-style:none;margin:5px 0;}a{-webkit-text-decoration:none;text-decoration:none;color:blue;}a:hover{opacity:0.6;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWF1QixBQUk2QixBQUlWLEFBSU0sQUFLSyxBQUtULFVBYmQsRUFjQSxJQVZlLElBUmYsU0FTQSxxQkFJYSxXQUNiIiwiZmlsZSI6InBhZ2VzL2luZGV4LmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy95bGkxNDkvRG9jdW1lbnRzL3dvcmtzcGFjZS9uZXh0LXBsYXlncm91bmQiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZmV0Y2ggZnJvbSBcImlzb21vcnBoaWMtdW5mZXRjaFwiO1xuXG5pbXBvcnQgTXlMYXlvdXQgZnJvbSBcIi4uL2NvbXBvbmVudHMvTXlMYXlvdXRcIjtcbmltcG9ydCBQb3N0T3ZlcnZpZXcgZnJvbSBcIi4uL2NvbXBvbmVudHMvUG9zdE92ZXJ2aWV3XCI7XG5cbmNvbnN0IEluZGV4ID0gKHsgc2hvd3MgfSkgPT4gKFxuICA8TXlMYXlvdXQ+XG4gICAgPGgxPkJhdG1hbiBUViBTaG93czwvaDE+XG4gICAgPHVsPlxuICAgICAge3Nob3dzLm1hcCgoeyBzaG93IH0pID0+IChcbiAgICAgICAgPFBvc3RPdmVydmlldyBrZXk9e3Nob3cuaWR9IHNob3c9e3Nob3d9IC8+XG4gICAgICApKX1cbiAgICA8L3VsPlxuICAgIDxzdHlsZSBnbG9iYWwganN4PntgXG4gICAgICBoMSxcbiAgICAgIGEge1xuICAgICAgICBmb250LWZhbWlseTogXCJBcmlhbFwiO1xuICAgICAgfVxuXG4gICAgICB1bCB7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICB9XG5cbiAgICAgIGxpIHtcbiAgICAgICAgbGlzdC1zdHlsZTogbm9uZTtcbiAgICAgICAgbWFyZ2luOiA1cHggMDtcbiAgICAgIH1cblxuICAgICAgYSB7XG4gICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgY29sb3I6IGJsdWU7XG4gICAgICB9XG5cbiAgICAgIGE6aG92ZXIge1xuICAgICAgICBvcGFjaXR5OiAwLjY7XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L015TGF5b3V0PlxuKTtcblxuSW5kZXguZ2V0SW5pdGlhbFByb3BzID0gYXN5bmMgKCkgPT4ge1xuICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChcImh0dHBzOi8vYXBpLnR2bWF6ZS5jb20vc2VhcmNoL3Nob3dzP3E9YmF0bWFuXCIpO1xuICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcblxuICBjb25zb2xlLmxvZyhgc2hvdyBkYXRhIGZldGNoZWQuIENvdW50OiAke2RhdGEubGVuZ3RofWApO1xuXG4gIHJldHVybiB7XG4gICAgc2hvd3M6IGRhdGFcbiAgfTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEluZGV4O1xuIl19 */\n/*@ sourceURL=pages/index.js */"
+    styleId: "3317253252",
+    css: "h1,a{font-family:\"Arial\";}ul{padding:0;}li{list-style:none;margin:5px 0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWF1QixBQUk2QixBQUlWLEFBSU0sVUFIbEIsTUFJZSxJQVJmLFNBU0EiLCJmaWxlIjoicGFnZXMvaW5kZXguanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL3lsaTE0OS9Eb2N1bWVudHMvd29ya3NwYWNlL25leHQtcGxheWdyb3VuZCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBmZXRjaCBmcm9tIFwiaXNvbW9ycGhpYy11bmZldGNoXCI7XG5cbmltcG9ydCBNeUxheW91dCBmcm9tIFwiLi4vY29tcG9uZW50cy9NeUxheW91dFwiO1xuaW1wb3J0IFBvc3RPdmVydmlldyBmcm9tIFwiLi4vY29tcG9uZW50cy9Qb3N0T3ZlcnZpZXdcIjtcblxuY29uc3QgSW5kZXggPSAoeyBzaG93cyB9KSA9PiAoXG4gIDxNeUxheW91dD5cbiAgICA8aDE+QmF0bWFuIFRWIFNob3dzPC9oMT5cbiAgICA8dWw+XG4gICAgICB7c2hvd3MubWFwKCh7IHNob3cgfSkgPT4gKFxuICAgICAgICA8UG9zdE92ZXJ2aWV3IGtleT17c2hvdy5pZH0gc2hvdz17c2hvd30gLz5cbiAgICAgICkpfVxuICAgIDwvdWw+XG4gICAgPHN0eWxlIGdsb2JhbCBqc3g+e2BcbiAgICAgIGgxLFxuICAgICAgYSB7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBcIkFyaWFsXCI7XG4gICAgICB9XG5cbiAgICAgIHVsIHtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgIH1cblxuICAgICAgbGkge1xuICAgICAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgICAgICBtYXJnaW46IDVweCAwO1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgPC9NeUxheW91dD5cbik7XG5cbkluZGV4LmdldEluaXRpYWxQcm9wcyA9IGFzeW5jICgpID0+IHtcbiAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goXCJodHRwczovL2FwaS50dm1hemUuY29tL3NlYXJjaC9zaG93cz9xPWJhdG1hblwiKTtcbiAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7XG5cbiAgY29uc29sZS5sb2coYHNob3cgZGF0YSBmZXRjaGVkLiBDb3VudDogJHtkYXRhLmxlbmd0aH1gKTtcblxuICByZXR1cm4ge1xuICAgIHNob3dzOiBkYXRhXG4gIH07XG59O1xuXG5leHBvcnQgZGVmYXVsdCBJbmRleDtcbiJdfQ== */\n/*@ sourceURL=pages/index.js */"
   }));
 };
 
