@@ -22,12 +22,16 @@
     "prettier": "^1.14.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-markdown": "^3.4.1"
+    "react-markdown": "^3.4.1",
+    "jss": "latest"
   },
   "devDependencies": {
     "babel-plugin-transform-define": "^1.3.0",
     "del": "latest",
     "mkdirp-then": "latest",
-    "recursive-copy": "latest"
+    "recursive-copy": "latest",
+    "styled-jsx": "latest",
+    "prop-types": "latest",
+    "react-jss": "latest"
   }
 }
