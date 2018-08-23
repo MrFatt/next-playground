@@ -1,11 +1,12 @@
 import { ButtonBase } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
-import Link from 'next/link';
+import Link from "next/link";
 
 const styles = () => ({
   button: {
-    marginRight: 20,
-    marginLeft: 20
+    paddingRight: 20,
+    paddingLeft: 20,
+    fontSize: 18
   }
 });
 

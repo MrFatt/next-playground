@@ -1,4 +1,4 @@
-import { Card, CardMedia, CardContent, Typography } from "@material-ui/core";
+import { Card, CardContent, CardMedia, Typography } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import Link from "next/link";
 
@@ -10,24 +10,43 @@ const styles = {
     paddingLeft: 20,
     paddingTop: 10,
     paddingBottom: 10,
-    maxHeight: 140
+    height: 160
   },
   media: {
     width: "100%",
     maxWidth: 140
   },
   content: {
+    paddingTop: 0,
+    paddingBottom: 0,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    "&:last-child": { paddingBottom: 0 }
+  },
+  hover: {
     "&:hover": {
       color: "blue",
       opacity: 0.6,
       cursor: "pointer"
     }
   },
+  name: {
+    height: 20
+  },
   summary: {
     lineClamp: 3,
     boxOrient: "vertical",
     display: "box",
+    height: "auto",
     overflow: "hidden"
+  },
+  meta: {
+    marginTop: 10,
+    height: 20,
+    "&:hover": {
+      cursor: "default"
+    }
   }
 };
 
@@ -38,7 +57,8 @@ export default withStyles(styles)(props => {
       image: { medium },
       summary,
       name,
-      id
+      id,
+      premiered
     }
   } = props;
 
@@ -51,12 +71,23 @@ export default withStyles(styles)(props => {
           className={classes.media}
           image={medium || "/static/GitHub-Mark-64px.png"}
         />
-        <CardContent>
-          <Typography gutterBottom variant="title" component="h2" className={classes.content}>
+        <CardContent className={classes.content}>
+          <Typography
+            gutterBottom
+            variant="title"
+            component="h2"
+            className={[classes.hover, classes.name]}
+          >
             {name}
           </Typography>
-          <Typography component="p" className={[classes.content,classes.summary]}>
+          <Typography
+            component="p"
+            className={[classes.hover, classes.summary]}
+          >
             {summary.replace(/<[/]?[pb]>/g, "")}
+          </Typography>
+          <Typography component="p" className={classes.meta}>
+            premiered at: {premiered}
           </Typography>
         </CardContent>
       </Card>
