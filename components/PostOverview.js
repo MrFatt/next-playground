@@ -17,6 +17,13 @@ const styles = {
     maxWidth: 140
   },
   content: {
+    "&:hover": {
+      color: "blue",
+      opacity: 0.6,
+      cursor: "pointer"
+    }
+  },
+  summary: {
     lineClamp: 3,
     boxOrient: "vertical",
     display: "box",
@@ -45,10 +52,10 @@ export default withStyles(styles)(props => {
           image={medium || "/static/GitHub-Mark-64px.png"}
         />
         <CardContent>
-          <Typography gutterBottom variant="title" component="h2">
+          <Typography gutterBottom variant="title" component="h2" className={classes.content}>
             {name}
           </Typography>
-          <Typography component="p" className={classes.content}>
+          <Typography component="p" className={[classes.content,classes.summary]}>
             {summary.replace(/<[/]?[pb]>/g, "")}
           </Typography>
         </CardContent>
