@@ -10,7 +10,7 @@ const memberContainer = {
 export default props => (
   <div style={memberContainer}>
     {props.nodes.map(node => (
-      <MemberInfo member={node} />
+      <MemberInfo key={node.id} member={node} />
     ))}
   </div>
 );

@@ -1,37 +1,16 @@
 import { Avatar } from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
 
-const styles = {
-  container: {
-    maxWidth: 1000,
-    display: "flex",
-    paddingLeft: 20,
-    paddingTop: 10,
-    paddingBottom: 10,
-    alignItems: "center"
-  },
-  login: {
-    marginLeft: 10,
-    "&:hover": {
-      color: "blue",
-      opacity: 0.6,
-      cursor: "pointer"
-    }
-  }
-};
-
-export default withStyles(styles)(props => {
+export default props => {
   const {
-    classes,
     member: { login, avatarUrl }
   } = props;
 
   return (
     <div>
       <a href={`https://github.com/${login}`}>
-        <div className={classes.container}>
+        <div className="member-container">
           <Avatar src={avatarUrl} />
-          <div className={classes.login}>{login}</div>
+          <div className="member-login">{login}</div>
         </div>
       </a>
       <style jsx>{`
@@ -40,7 +19,23 @@ export default withStyles(styles)(props => {
           text-decoration: none;
           color: black;
         }
+
+        .member-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .member-login {
+          margin-left: 15px;
+        }
+
+        .member-login:hover {
+          color: blue;
+          opacity: 0.6;
+          cursor: pointer;
+        }
       `}</style>
     </div>
   );
-});
+};
