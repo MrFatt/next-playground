@@ -27,6 +27,7 @@ module.exports = {
     // Perform customizations to webpack config
     // console.log('webpack');
     // console.log(config.module.rules, dev);
+    config.node = {fs: "empty"}
     config.module.rules = config.module.rules.map(rule => {
       if(rule.loader === 'babel-loader') {
         rule.options.cacheDirectory = false
