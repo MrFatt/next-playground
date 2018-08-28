@@ -12,11 +12,6 @@ const Index = ({ shows }) => (
       ))}
     </ul>
     <style global jsx>{`
-      h1,
-      a {
-        font-family: "Arial";
-      }
-
       ul {
         padding: 0;
       }

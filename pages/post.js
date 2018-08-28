@@ -1,29 +1,18 @@
-import { withRouter } from "next/router";
-
 import MyLayout from "../components/MyLayout";
-
-const Content = ({show}) => (
-  <div>
-    <h1>{show.name}</h1>
-    <p>{show.summary.replace(/<[/]?[pb]>/g, '')}</p>
-    <img src={show.image.medium}/>
-  </div>
-);
+import PostContent from "../components/PostContent";
 
 const Post = props => (
   <MyLayout>
-    <Content {...props} />
+    <PostContent {...props} />
   </MyLayout>
 );
 
-Post.getInitialProps = async (req) => {
+Post.getInitialProps = async req => {
   const query = req.query;
   const res = await fetch(`https://api.tvmaze.com/shows/${query.id}`);
   const show = await res.json();
 
-  console.log(`Fetched show: ${show.name}`)
-
-  return { show }
-}
+  return { show };
+};
 
 export default Post;

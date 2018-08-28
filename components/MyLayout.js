@@ -9,7 +9,7 @@ const bodyStyle = {
   width: 1000,
   marginLeft: "auto",
   marginRight: "auto",
-  marginTop: 100
+  marginTop: 50
 };
 
 
