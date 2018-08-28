@@ -1,18 +1,39 @@
 import MyLayout from "../components/MyLayout";
 import PostContent from "../components/PostContent";
+import { Query } from "react-apollo";
+import gql from "graphql-tag";
 
-const Post = props => (
-  <MyLayout>
-    <PostContent {...props} />
-  </MyLayout>
-);
+const getPath = title => title;
 
-Post.getInitialProps = async req => {
-  const query = req.query;
-  const res = await fetch(`https://api.tvmaze.com/shows/${query.id}`);
-  const show = await res.json();
-
-  return { show };
+export default props => {
+  const { title } = props;
+  return (
+    <Query
+      query={gql`
+        {
+          organization(login: "TWNTF") {
+            repository(name: "Translations") {
+              resourcePath
+              object(
+                # expression: ${getPath(title)}
+                expression: "master:docs/React Native at Airbnb/blogs/React-Native-at-Airbnb.md"
+              ) {
+                ... on Blob {
+                  text
+                }
+              }
+            }
+          }
+        }
+      `}
+    >
+      {({ data }) => {
+        return (
+          <MyLayout>
+            <PostContent data={data.organization.repository.object} />
+          </MyLayout>
+        );
+      }}
+    </Query>
+  );
 };
-
-export default Post;
