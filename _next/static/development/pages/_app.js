@@ -34,7 +34,6 @@ function create(initialState) {
       uri: "https://api.github.com/graphql",
       // Server URL (must be absolute)
       headers: {
-        authorization: "Bearer ".concat("2b9a9e52b8103a47138af9c071428b6d6901c484")
       }
     }),
     cache: new apollo_boost__WEBPACK_IMPORTED_MODULE_0__["InMemoryCache"]().restore(initialState || {})
