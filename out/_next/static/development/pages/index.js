@@ -49773,7 +49773,7 @@ _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function 
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -49796,7 +49796,7 @@ module.exports = dll_a77a75e478981c1e0d25;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]])
+},[[3,"static/runtime/webpack.js"]]])
             return { page: comp.default }
           })
         ;
