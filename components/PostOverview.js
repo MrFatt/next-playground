@@ -10,11 +10,7 @@ const styles = {
     paddingLeft: 20,
     paddingTop: 10,
     paddingBottom: 10,
-    height: 160
-  },
-  media: {
-    width: "100%",
-    maxWidth: 140
+    height: 100
   },
   content: {
     paddingTop: 0,
@@ -32,46 +28,26 @@ const styles = {
     }
   },
   name: {
-    height: 20
-  },
-  summary: {
-    lineClamp: 3,
-    boxOrient: "vertical",
-    display: "box",
-    height: "auto",
-    overflow: "hidden"
+    fontSize: "xx-large"
   },
   meta: {
     marginTop: 10,
-    height: 20,
-    "&:hover": {
-      cursor: "default"
-    }
+    height: 20
   }
 };
 
 export default withStyles(styles)(props => {
   const {
     classes,
-    show: {
-      image: { medium },
-      summary,
-      name,
-      id,
-      premiered
-    }
+    data: { name, oid }
   } = props;
 
   const backendurl = process.env.BACKEND_URL;
 
   return (
-    <Link href={`${backendurl}/post/${id}`}>
-      <Card className={classes.card}>
-        <CardMedia
-          className={classes.media}
-          image={medium || "/static/GitHub-Mark-64px.png"}
-        />
-        <CardContent className={classes.content}>
+    <Card elevation={0} className={classes.card}>
+      <CardContent className={classes.content}>
+        <Link href={`${backendurl}/post/${oid}`}>
           <Typography
             gutterBottom
             variant="title"
@@ -80,17 +56,13 @@ export default withStyles(styles)(props => {
           >
             {name}
           </Typography>
-          <Typography
-            component="p"
-            className={[classes.hover, classes.summary]}
-          >
-            {summary.replace(/<[/]?[pb]>/g, "")}
+        </Link>
+        <Link href={`${backendurl}/post/${oid}`}>
+          <Typography component="p" className={[classes.hover, classes.meta]}>
+            阅读更多
           </Typography>
-          <Typography component="p" className={classes.meta}>
-            premiered at: {premiered}
-          </Typography>
-        </CardContent>
-      </Card>
-    </Link>
+        </Link>
+      </CardContent>
+    </Card>
   );
 });
