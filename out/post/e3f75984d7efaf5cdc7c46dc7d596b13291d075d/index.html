@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charSet="utf-8" class="next-head"/><link rel="preload" href="/next-playground/_next/static/4c41eae0-b592-4951-98cd-c1ed6e1b7b44/pages/post.js" as="script"/><link rel="preload" href="/next-playground/_next/static/4c41eae0-b592-4951-98cd-c1ed6e1b7b44/pages/_app.js" as="script"/><link rel="preload" href="/next-playground/_next/static/4c41eae0-b592-4951-98cd-c1ed6e1b7b44/pages/_error.js" as="script"/><link rel="preload" href="/next-playground/_next/static/runtime/webpack-96d52efe1a3b90f63e41.js" as="script"/><link rel="preload" href="/next-playground/_next/static/chunks/00623174affc353f6611.js" as="script"/><link rel="preload" href="/next-playground/_next/static/runtime/main-f778233c78820c525831.js" as="script"/><style id="jss-server-side">.jss5 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.jss6 {
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  position: absolute;
+}
+.jss7 {
+  opacity: 0.3;
+  transform: scale(1);
+  animation: mui-ripple-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.jss8 {
+  animation-duration: 200ms;
+}
+.jss9 {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  display: block;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.jss10 {
+  opacity: 0;
+  animation: mui-ripple-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.jss11 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: mui-ripple-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@keyframes mui-ripple-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@keyframes mui-ripple-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes mui-ripple-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.jss2 {
+  color: inherit;
+  cursor: pointer;
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+  outline: none;
+  position: relative;
+  user-select: none;
+  align-items: center;
+  border-radius: 0;
+  vertical-align: middle;
+  justify-content: center;
+  -moz-appearance: none;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.jss2::-moz-focus-inner {
+  border-style: none;
+}
+.jss2.jss3 {
+  cursor: default;
+  pointer-events: none;
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+.jss1 {
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}</style><style id="__jsx-1594618571">h1,h2,h3,h4,h5,h6{font-family:"Open Sans","Microsoft YaHei","微软雅黑",STXihei, "华文细黑",sans-serif;}
+p,ul,li,a{font-family:"Roboto","Microsoft YaHei","微软雅黑",STXihei, "华文细黑",serif;}
+blockquote{padding:0 1em;color:#6a737d;border-left:0.25em solid #dfe2e5;margin-left:0;margin-bottom:16px;margin-top:0;}
+p,li{word-wrap:break-word;font-size:21px;line-height:1.58;-webkit-letter-spacing:-0.003em;-moz-letter-spacing:-0.003em;-ms-letter-spacing:-0.003em;letter-spacing:-0.003em;}</style><title>Next-playground</title><meta charSet="utf-8"/><meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/><meta name="theme-color" content="#9c27b0"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans:300,400,500"/></head><body><div id="__next"><div style="margin:20px;padding:20px"><div style="display:flex;justify-content:space-between;align-items:center"><div><img style="max-height:40px" src="/next-playground/static/logo.png"/></div><div><button tabindex="0" class="jss2 jss1" type="button">首页<span class="jss5"></span></button><button tabindex="0" class="jss2 jss1" type="button">关于我们<span class="jss5"></span></button></div><a href="https://github.com/TWNTF"><img src="/next-playground/static/GitHub-Mark-32px.png"/></a></div><div style="width:1000px;margin-left:auto;margin-right:auto;margin-top:50px"><div class="jsx-1594618571"><div class="jsx-1594618571"><ul>
+<li>原文地址：https://medium.com/airbnb-engineering/whats-next-for-mobile-at-airbnb-5e71618576ab</li>
+<li>译文出自：TWNTF</li>
+<li>译者：Yingjian Li</li>
+</ul>
+<h1>Airbnb 的 React Native 实践： 移动端发展计划</h1>
+<blockquote>
+<p>整装待发,重回原生</p>
+</blockquote>
+<p><em>这是我们介绍 React Native 经验和 Airbnb mobile 未来计划<a href="https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c">系列博客</a>的第五篇</em></p>
+<h2>激动人心的时刻即将来临</h2>
+<p>虽然在使用 React Native 开发,但是我们也一直在积累原生开发的经验.现在我们已经一系列正在进行中或已完成的项目.其中,部分项目是受到 React Native 经验和最佳实践的启发而完成的.</p>
+<h3>服务器端渲染</h3>
+<p>尽管不再使用 React Native, 我们仍然十分重视只写一次产品代码的价值. 我们仍然高度依赖我们的统一设计语言系统, 使许多 Android 和 iOS 的页面看起来完全一样.</p>
+<p>许多团队已经尝试了强大的服务器端渲染的框架,并且达成一致.在这些框架中,服务器将描述组件渲染,页面配置和相关操作的信息发送给移动设备.不同的移动平台获取到数据后使用 DLS 组件渲染原生页面或者整个流程.</p>
+<p>大规模服务器端渲染也存在着一些挑战. 下面是我们正在解决的一些问题:</p>
+<ul>
+<li>安全升级组件定义的同时维护向下兼容性.</li>
+<li>跨平台共享组件的类型定义.</li>
+<li>在运行时的事件响应,如点击按钮或用户输入</li>
+<li>多个 JSON 驱动页面间跳转的同时,维护内部状态.</li>
+<li>构建时没有实现的自定义组件的渲染.我们正在尝试使用<a href="https://github.com/airbnb/Lona/">Lona</a>解决.</li>
+</ul>
+<p>服务器端渲染框架使我们能够更方便的进行试验以及热更新,为我们提供了巨大的价值.</p>
+<h3>Epoxy 组件</h3>
+<p>在 2016 年,我们开源了 Android 的<a href="https://github.com/airbnb/epoxy">Epoxy</a>.Epoxy 可以实现简单的异构<code>RecyclerViews</code>, <code>UICollectionViews</code>和<code>UITableviews</code>. 如今大多数的新页面都使用 Epoxy. 这使得我们可以将每个页面分解成独立的组件,进而实现懒加载. 而且在 iOS 和 Android 上均可使用.
+iOS 端示例代码:</p>
+<pre><code class="language-swift">BasicRow.epoxyModel(
+  content: BasicRow.Content(
+    titleText: &quot;Settings&quot;,
+    subtitleText: &quot;Optional subtitle&quot;),
+  style: .standard,
+  dataID: &quot;settings&quot;,
+  selectionHandler: { [weak self] _, _, _ in
+    self?.navigate(to: .settings)
+  })
+</code></pre>
+<p>在 Android 上,我们利用<a href="https://kotlinlang.org/docs/reference/type-safe-builders.html">DSLs in Kotlin</a>,使得组件的实现变得简单而且类型安全:</p>
+<pre><code class="language-kotlin">basicRow {
+ id(&quot;settings&quot;)
+ title(R.string.settings)
+ subtitleText(R.string.settings_subtitle)
+ onClickListener { navigateTo(SETTINGS) }
+}
+</code></pre>
+<h3>Epoxy 中的 diffing</h3>
+<p>在 React 中,<a href="https://reactjs.org/tutorial/tutorial.html#what-is-react">render</a>会返回一个组件的列表.React 性能的关键是组件仅仅是真实 DOM 的数据模型.对组件树进行 diff,然后只更新改动部分.我们在 Epoxy 中引入了相似的概念.在 Epoxy 中,在<a href="https://reactjs.org/tutorial/tutorial.html#what-is-react">buildModels</a>中声明整个页面的模型,再加上 Kotlin DSL,使得它在概念上与 React 十分相似,示例代码:</p>
+<pre><code class="language-kotlin">override fun EpoxyController.buildModels() {
+  header {
+    id(&quot;marquee&quot;)
+    title(R.string.edit_profile)
+  }
+  inputRow {
+    id(&quot;first name&quot;)
+    title(R.string.first_name)
+    text(firstName)
+    onChange {
+      firstName = it
+      requestModelBuild()
+    }
+  }
+  // 其余的模型放在这里
+}
+</code></pre>
+<p>每当你的数据发生变化,调用<code>requestModelBuild()</code>将会调用最佳的<code>RecyclerView</code>来重新渲染你的页面.</p>
+<p>iOS 端的示例代码:</p>
+<pre><code class="language-swift">override func itemModel(forDataID dataID: DemoDataID) -&gt; EpoxyableModel? {
+  switch dataID {
+  case .header:
+    return DocumentMarquee.epoxyModel(
+      content: DocumentMarquee.Content(titleText: &quot;Edit Profile&quot;),
+      style: .standard,
+      dataID: DemoDataID.header)
+  case .inputRow:
+    return InputRow.epoxyModel(
+      content: InputRow.Content(
+        titleText: &quot;First name&quot;,
+        inputText: firstName)
+      style: .standard,
+      dataID: DemoDataID.inputRow,
+      behaviorSetter: { [weak self] view, content, dataID in
+        view.textDidChangeBlock = { _, inputText in
+          self?.firstName = inputText
+          self?.rebuildItemModel(forDataID: .inputRow)
+        }
+      })
+  }
+}
+</code></pre>
+<h3>一个全新的 Android 产品框架(MvRx)</h3>
+<p>在近期开发中,最令人兴奋的是一个正在开发的新框架,我们内部叫做 MvRx.MvRx 结合了<code>Epoxy</code>,<a href="https://developer.android.com/jetpack/"><code>Jetpack</code></a>,<a href="https://github.com/ReactiveX/RxJava"><code>RxJava</code></a>和<code>Kotlin</code>的优点,以及一些 React 中的规则,使得构建新页面变得更加简单,更加流畅.它是由常见的开发模式以及 React 中的优点开发的,是一个&quot;固定&quot;(<a href="https://stackoverflow.com/questions/802050/what-is-opinionated-software">opinionated</a>)但灵活的框架.它也是线程安全的，几乎所有东西都不在主线程运行，这使得滚动和动画感觉流畅.</p>
+<p>到目前为止,它已经应用到了大量的页面中,并且几乎完全不需要处理生命周期.我们目前正在一些 Android 产品上进行试验,并且如果一切顺利的话会将他开源.下面是创建一个发出网络请求的功能页面所需的全部代码:</p>
+<pre><code class="language-kotlin">data class SimpleDemoState(val listing: Async&lt;Listing&gt; = Uninitialized)
+
+class SimpleDemoViewModel(override val initialState: SimpleDemoState) : MvRxViewModel&lt;SimpleDemoState&gt;() {
+    init {
+        fetchListing()
+    }
+
+    private fun fetchListing() {
+        // This automatically fires off a request and maps its response to Async&lt;Listing&gt;
+        // which is a sealed class and can be: Unitialized, Loading, Success, and Fail.
+        // No need for separate success and failure handlers!
+        // This request is also lifecycle-aware. It will survive configuration changes and
+        // will never be delivered after onStop.
+        ListingRequest.forListingId(12345L).execute { copy(listing = it) }
+    }
+}
+
+class SimpleDemoFragment : MvRxFragment() {
+    // This will automatically subscribe to the ViewModel state and rebuild the epoxy models
+    // any time anything changes. Similar to how React's render method runs for every change of
+    // props or state.
+    private val viewModel by fragmentViewModel(SimpleDemoViewModel::class)
+
+    override fun EpoxyController.buildModels() {
+        val (state) = withState(viewModel)
+        if (state.listing is Loading) {
+            loader()
+            return
+        }
+        // These Epoxy models are not the views themself so calling buildModels is cheap. RecyclerView
+        // diffing will be automaticaly done and only the models that changed will re-render.
+        documentMarquee {
+            title(state.listing().name)
+        }
+        // Put the rest of your Epoxy models here...
+    }
+
+    override fun EpoxyController.buildFooter() = fixedActionFooter {
+        val (state) = withState(viewModel)
+        buttonLoading(state is Loading)
+        buttonText(state.listing().price)
+        buttonOnClickListener { _ -&gt; }
+    }
+}
+</code></pre>
+<p>MvRx 具有简单的构造,用于处理 Fragment 参数,跨进程重启时<code>savedInstanceState</code>的持久化,TTI 追踪以及一些其他的功能.</p>
+<p>我们也正在开发一个相似的 iOS 框架,该框架目前正处于早期测试阶段.</p>
+<p>尽管我们已经对目前所取得的进展十分满意了,还是希望很快可以听到更多相关的消息.</p>
+<h3>迭代速度</h3>
+<p>当从 React Native 切换回原生时,迭代速度是显而易见的问题.测试改动的时间从原本只需要 1~2 秒,变成可能需要等待将近 15 分钟是不可接受的.幸运的是,我们能够从一些方面缓解这一现象.</p>
+<p>我们在 Android 和 iOS 上构建的基础设施能够根据功能模块编译启动器和部分 app.</p>
+<p>在 Android 端使用了<a href="https://developer.android.com/studio/build/build-variants#product-flavors">gradle 产品风格</a>, 我们的 gradle 模块如下图所示:</p>
+<p><img src="images/gradle%20modules.png" alt=""></p>
+<p>新的间接层使得工程师可以 app 的切片上进行开发.再配合<a href="https://blog.jetbrains.com/idea/2017/06/intellij-idea-2017-2-eap-introduces-unloaded-modules/">Intellij module unloadinig</a>,可以在 Macbook Pro 上动态提高构建和 IDE 的性能.</p>
+<p>我们已经构建了用于创建新的测试 flavor 的脚本,并且在短短几个越能,我们已经完成了超过 20 个.使用这些新风格可以使开发构建提速 2.5 倍,并且超过 5 分钟的比例下降了 15 倍.</p>
+<p>作为参考,这是用于动态生成具有根依赖性模块产品风格的<a href="https://gist.github.com/gpeal/d68e4fc1357ef9d126f25afd9ab4eee2">gradle 代码块</a>.</p>
+<p>相似地,iOS 上的模块如下图所示:</p>
+<p><img src="images/iOS%20modules.png" alt=""></p>
+<p>同样系统的构建速度会提升 3-8 倍.</p>
+<h2>结论</h2>
+<p>很高兴能够成为一家不怕尝试新技术但又努力保持高质量,高速度和开发体验的公司.最后,React Native 是发布功能,为我们提供了新的移动开发思路的重要工具.如果这听起来像是您想参与的旅程，<a href="https://www.airbnb.com/careers/departments/engineering">请告诉我们</a>！</p>
+<p><em>这是 Airbnb 关于 React Native 经验分享和移动端未来计划系列文章的第五篇.</em></p>
+<p><a href="../Airbnb%20%E7%9A%84%20React%20Native%20%E5%AE%9E%E8%B7%B5%EF%BC%9A%20%E6%A6%82%E8%BF%B0/README.md">第一篇: React Native at Airbnb</a></p>
+<p><a href="../Airbnb%20%E7%9A%84%20React%20Native%20%E5%AE%9E%E8%B7%B5%EF%BC%9A%20%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82/README.md">第二篇: The Technology</a></p>
+<p><a href="../Airbnb%20%E7%9A%84%20React%20Native%20%E5%AE%9E%E8%B7%B5%EF%BC%9A%20%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9A%84%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%9B%A2%E9%98%9F/README.md">第三篇: Building a Cross-Platform Mobile Team</a></p>
+<p><a href="../Airbnb%20%E7%9A%84%20React%20Native%20%E5%AE%9E%E8%B7%B5%EF%BC%9A%20%E5%BC%83%E7%94%A8%20React%20Native/README.md">第四篇: Making a Decision on React Native</a></p>
+<p><a href="../Airbnb%20%E7%9A%84%20React%20Native%20%E5%AE%9E%E8%B7%B5%EF%BC%9A%20%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%8F%91%E5%B1%95%E8%AE%A1%E5%88%92/README.md">第五篇: What's Next for Mobile</a></p>
+</div></div></div></div></div><div id="__next-error"></div><script>
+      __NEXT_DATA__ = {"props":{"pageProps":{},"apolloState":{"$ROOT_QUERY.organization({\"login\":\"TWNTF\"}).repository({\"name\":\"Translations\"}).object({\"expression\":\"master:docs/Airbnb 的 React Native 实践： 移动端发展计划/README.md\"})":{"text":"* 原文地址：https://medium.com/airbnb-engineering/whats-next-for-mobile-at-airbnb-5e71618576ab\n* 译文出自：TWNTF\n* 译者：Yingjian Li\n\n\n# Airbnb 的 React Native 实践： 移动端发展计划\n\n\u003e 整装待发,重回原生\n\n_这是我们介绍 React Native 经验和 Airbnb mobile 未来计划[系列博客](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)的第五篇_\n\n## 激动人心的时刻即将来临\n\n虽然在使用 React Native 开发,但是我们也一直在积累原生开发的经验.现在我们已经一系列正在进行中或已完成的项目.其中,部分项目是受到 React Native 经验和最佳实践的启发而完成的.\n\n### 服务器端渲染\n\n尽管不再使用 React Native, 我们仍然十分重视只写一次产品代码的价值. 我们仍然高度依赖我们的统一设计语言系统, 使许多 Android 和 iOS 的页面看起来完全一样.\n\n许多团队已经尝试了强大的服务器端渲染的框架,并且达成一致.在这些框架中,服务器将描述组件渲染,页面配置和相关操作的信息发送给移动设备.不同的移动平台获取到数据后使用 DLS 组件渲染原生页面或者整个流程.\n\n大规模服务器端渲染也存在着一些挑战. 下面是我们正在解决的一些问题:\n\n* 安全升级组件定义的同时维护向下兼容性.\n* 跨平台共享组件的类型定义.\n* 在运行时的事件响应,如点击按钮或用户输入\n* 多个 JSON 驱动页面间跳转的同时,维护内部状态.\n* 构建时没有实现的自定义组件的渲染.我们正在尝试使用[Lona](https://github.com/airbnb/Lona/)解决.\n\n服务器端渲染框架使我们能够更方便的进行试验以及热更新,为我们提供了巨大的价值.\n\n### Epoxy 组件\n\n在 2016 年,我们开源了 Android 的[Epoxy](https://github.com/airbnb/epoxy).Epoxy 可以实现简单的异构`RecyclerViews`, `UICollectionViews`和`UITableviews`. 如今大多数的新页面都使用 Epoxy. 这使得我们可以将每个页面分解成独立的组件,进而实现懒加载. 而且在 iOS 和 Android 上均可使用.\niOS 端示例代码:\n\n```swift\nBasicRow.epoxyModel(\n  content: BasicRow.Content(\n    titleText: \"Settings\",\n    subtitleText: \"Optional subtitle\"),\n  style: .standard,\n  dataID: \"settings\",\n  selectionHandler: { [weak self] _, _, _ in\n    self?.navigate(to: .settings)\n  })\n```\n\n在 Android 上,我们利用[DSLs in Kotlin](https://kotlinlang.org/docs/reference/type-safe-builders.html),使得组件的实现变得简单而且类型安全:\n\n```kotlin\nbasicRow {\n id(\"settings\")\n title(R.string.settings)\n subtitleText(R.string.settings_subtitle)\n onClickListener { navigateTo(SETTINGS) }\n}\n```\n\n### Epoxy 中的 diffing\n\n在 React 中,[render](https://reactjs.org/tutorial/tutorial.html#what-is-react)会返回一个组件的列表.React 性能的关键是组件仅仅是真实 DOM 的数据模型.对组件树进行 diff,然后只更新改动部分.我们在 Epoxy 中引入了相似的概念.在 Epoxy 中,在[buildModels](https://reactjs.org/tutorial/tutorial.html#what-is-react)中声明整个页面的模型,再加上 Kotlin DSL,使得它在概念上与 React 十分相似,示例代码:\n\n```kotlin\noverride fun EpoxyController.buildModels() {\n  header {\n    id(\"marquee\")\n    title(R.string.edit_profile)\n  }\n  inputRow {\n    id(\"first name\")\n    title(R.string.first_name)\n    text(firstName)\n    onChange {\n      firstName = it\n      requestModelBuild()\n    }\n  }\n  // 其余的模型放在这里\n}\n```\n\n每当你的数据发生变化,调用`requestModelBuild()`将会调用最佳的`RecyclerView`来重新渲染你的页面.\n\niOS 端的示例代码:\n\n```swift\noverride func itemModel(forDataID dataID: DemoDataID) -\u003e EpoxyableModel? {\n  switch dataID {\n  case .header:\n    return DocumentMarquee.epoxyModel(\n      content: DocumentMarquee.Content(titleText: \"Edit Profile\"),\n      style: .standard,\n      dataID: DemoDataID.header)\n  case .inputRow:\n    return InputRow.epoxyModel(\n      content: InputRow.Content(\n        titleText: \"First name\",\n        inputText: firstName)\n      style: .standard,\n      dataID: DemoDataID.inputRow,\n      behaviorSetter: { [weak self] view, content, dataID in\n        view.textDidChangeBlock = { _, inputText in\n          self?.firstName = inputText\n          self?.rebuildItemModel(forDataID: .inputRow)\n        }\n      })\n  }\n}\n```\n\n### 一个全新的 Android 产品框架(MvRx)\n\n在近期开发中,最令人兴奋的是一个正在开发的新框架,我们内部叫做 MvRx.MvRx 结合了`Epoxy`,[`Jetpack`](https://developer.android.com/jetpack/),[`RxJava`](https://github.com/ReactiveX/RxJava)和`Kotlin`的优点,以及一些 React 中的规则,使得构建新页面变得更加简单,更加流畅.它是由常见的开发模式以及 React 中的优点开发的,是一个\"固定\"([opinionated](https://stackoverflow.com/questions/802050/what-is-opinionated-software))但灵活的框架.它也是线程安全的，几乎所有东西都不在主线程运行，这使得滚动和动画感觉流畅.\n\n到目前为止,它已经应用到了大量的页面中,并且几乎完全不需要处理生命周期.我们目前正在一些 Android 产品上进行试验,并且如果一切顺利的话会将他开源.下面是创建一个发出网络请求的功能页面所需的全部代码:\n\n```kotlin\ndata class SimpleDemoState(val listing: Async\u003cListing\u003e = Uninitialized)\n\nclass SimpleDemoViewModel(override val initialState: SimpleDemoState) : MvRxViewModel\u003cSimpleDemoState\u003e() {\n    init {\n        fetchListing()\n    }\n\n    private fun fetchListing() {\n        // This automatically fires off a request and maps its response to Async\u003cListing\u003e\n        // which is a sealed class and can be: Unitialized, Loading, Success, and Fail.\n        // No need for separate success and failure handlers!\n        // This request is also lifecycle-aware. It will survive configuration changes and\n        // will never be delivered after onStop.\n        ListingRequest.forListingId(12345L).execute { copy(listing = it) }\n    }\n}\n\nclass SimpleDemoFragment : MvRxFragment() {\n    // This will automatically subscribe to the ViewModel state and rebuild the epoxy models\n    // any time anything changes. Similar to how React's render method runs for every change of\n    // props or state.\n    private val viewModel by fragmentViewModel(SimpleDemoViewModel::class)\n\n    override fun EpoxyController.buildModels() {\n        val (state) = withState(viewModel)\n        if (state.listing is Loading) {\n            loader()\n            return\n        }\n        // These Epoxy models are not the views themself so calling buildModels is cheap. RecyclerView\n        // diffing will be automaticaly done and only the models that changed will re-render.\n        documentMarquee {\n            title(state.listing().name)\n        }\n        // Put the rest of your Epoxy models here...\n    }\n\n    override fun EpoxyController.buildFooter() = fixedActionFooter {\n        val (state) = withState(viewModel)\n        buttonLoading(state is Loading)\n        buttonText(state.listing().price)\n        buttonOnClickListener { _ -\u003e }\n    }\n}\n```\n\nMvRx 具有简单的构造,用于处理 Fragment 参数,跨进程重启时`savedInstanceState`的持久化,TTI 追踪以及一些其他的功能.\n\n我们也正在开发一个相似的 iOS 框架,该框架目前正处于早期测试阶段.\n\n尽管我们已经对目前所取得的进展十分满意了,还是希望很快可以听到更多相关的消息.\n\n### 迭代速度\n\n当从 React Native 切换回原生时,迭代速度是显而易见的问题.测试改动的时间从原本只需要 1~2 秒,变成可能需要等待将近 15 分钟是不可接受的.幸运的是,我们能够从一些方面缓解这一现象.\n\n我们在 Android 和 iOS 上构建的基础设施能够根据功能模块编译启动器和部分 app.\n\n在 Android 端使用了[gradle 产品风格](https://developer.android.com/studio/build/build-variants#product-flavors), 我们的 gradle 模块如下图所示:\n\n![](images/gradle%20modules.png)\n\n新的间接层使得工程师可以 app 的切片上进行开发.再配合[Intellij module unloadinig](https://blog.jetbrains.com/idea/2017/06/intellij-idea-2017-2-eap-introduces-unloaded-modules/),可以在 Macbook Pro 上动态提高构建和 IDE 的性能.\n\n我们已经构建了用于创建新的测试 flavor 的脚本,并且在短短几个越能,我们已经完成了超过 20 个.使用这些新风格可以使开发构建提速 2.5 倍,并且超过 5 分钟的比例下降了 15 倍.\n\n作为参考,这是用于动态生成具有根依赖性模块产品风格的[gradle 代码块](https://gist.github.com/gpeal/d68e4fc1357ef9d126f25afd9ab4eee2).\n\n相似地,iOS 上的模块如下图所示:\n\n![](images/iOS%20modules.png)\n\n同样系统的构建速度会提升 3-8 倍.\n\n## 结论\n\n很高兴能够成为一家不怕尝试新技术但又努力保持高质量,高速度和开发体验的公司.最后,React Native 是发布功能,为我们提供了新的移动开发思路的重要工具.如果这听起来像是您想参与的旅程，[请告诉我们](https://www.airbnb.com/careers/departments/engineering)！\n\n_这是 Airbnb 关于 React Native 经验分享和移动端未来计划系列文章的第五篇._\n\n[第一篇: React Native at Airbnb](../Airbnb%20的%20React%20Native%20实践：%20概述/README.md)\n\n[第二篇: The Technology](../Airbnb%20的%20React%20Native%20实践：%20技术细节/README.md)\n\n[第三篇: Building a Cross-Platform Mobile Team](../Airbnb%20的%20React%20Native%20实践：%20构建一个跨平台的移动端团队/README.md)\n\n[第四篇: Making a Decision on React Native](../Airbnb%20的%20React%20Native%20实践：%20弃用%20React%20Native/README.md)\n\n[第五篇: What's Next for Mobile](../Airbnb%20的%20React%20Native%20实践：%20移动端发展计划/README.md)\n","__typename":"Blob"},"$ROOT_QUERY.organization({\"login\":\"TWNTF\"}).repository({\"name\":\"Translations\"})":{"object({\"expression\":\"master:docs/Airbnb 的 React Native 实践： 移动端发展计划/README.md\"})":{"type":"id","generated":true,"id":"$ROOT_QUERY.organization({\"login\":\"TWNTF\"}).repository({\"name\":\"Translations\"}).object({\"expression\":\"master:docs/Airbnb 的 React Native 实践： 移动端发展计划/README.md\"})","typename":"Blob"},"__typename":"Repository"},"$ROOT_QUERY.organization({\"login\":\"TWNTF\"})":{"repository({\"name\":\"Translations\"})":{"type":"id","generated":true,"id":"$ROOT_QUERY.organization({\"login\":\"TWNTF\"}).repository({\"name\":\"Translations\"})","typename":"Repository"},"__typename":"Organization"},"ROOT_QUERY":{"organization({\"login\":\"TWNTF\"})":{"type":"id","generated":true,"id":"$ROOT_QUERY.organization({\"login\":\"TWNTF\"})","typename":"Organization"}}}},"page":"/post","pathname":"/post","query":{"name":"Airbnb 的 React Native 实践： 移动端发展计划"},"buildId":"4c41eae0-b592-4951-98cd-c1ed6e1b7b44","assetPrefix":"/next-playground","nextExport":true}
+      module={}
+      __NEXT_LOADED_PAGES__ = []
+
+      __NEXT_REGISTER_PAGE = function (route, fn) {
+        __NEXT_LOADED_PAGES__.push({ route: route, fn: fn })
+      }
+    </script><script async="" id="__NEXT_PAGE__/post" src="/next-playground/_next/static/4c41eae0-b592-4951-98cd-c1ed6e1b7b44/pages/post.js"></script><script async="" id="__NEXT_PAGE__/_app" src="/next-playground/_next/static/4c41eae0-b592-4951-98cd-c1ed6e1b7b44/pages/_app.js"></script><script async="" id="__NEXT_PAGE__/_error" src="/next-playground/_next/static/4c41eae0-b592-4951-98cd-c1ed6e1b7b44/pages/_error.js"></script><script src="/next-playground/_next/static/runtime/webpack-96d52efe1a3b90f63e41.js" async=""></script><script src="/next-playground/_next/static/chunks/00623174affc353f6611.js" async=""></script><script src="/next-playground/_next/static/runtime/main-f778233c78820c525831.js" async=""></script></body></html>
