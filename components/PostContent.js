@@ -4,7 +4,23 @@ const PostContent = props => {
   const markdownConfig = {
     html: true
   };
-  const postHTML = markdownIt(markdownConfig).render(props.data.text);
+
+  const imageRegex = new RegExp(/\!\[(.*)\]\(images\/(.*)\)/g);
+  let text = props.data.text;
+  let regExpExecArray = imageRegex.exec(text);
+  while (regExpExecArray) {
+    text = text.replace(
+      regExpExecArray[0],
+      `![${
+        regExpExecArray[1]
+      }](https://github.com/TWNTF/Translations/raw/master/docs/${encodeURI(
+        props.name
+      )}/images/${regExpExecArray[2]}/)`
+    );
+    regExpExecArray = imageRegex.exec(text);
+  }
+
+  const postHTML = markdownIt(markdownConfig).render(text);
 
   return (
     <div>
@@ -26,6 +42,10 @@ const PostContent = props => {
           a {
             font-family: "Roboto", "Microsoft YaHei", "微软雅黑", STXihei,
               "华文细黑", serif;
+          }
+
+          img {
+            max-width: 1000px;
           }
 
           blockquote {

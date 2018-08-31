@@ -29,7 +29,7 @@ export default withRouter(props => {
       {({ data }) => {
         return (
           <MyLayout>
-            <PostContent data={data.organization.repository.object} />
+            <PostContent name={name} data={data.organization.repository.object} />
           </MyLayout>
         );
       }}
