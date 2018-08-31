@@ -9,9 +9,9 @@ module.exports = {
     const docs = await res.json();
 
     const routes = docs.reduce(
-      (acc, { sha, name }) =>
+      (acc, { name }) =>
         Object.assign({}, acc, {
-          [`/post/${sha}`]: {
+          [`/post/${encodeURI(name)}`]: {
             page: "/post",
             query: { name: name }
           }

@@ -1,6 +1,5 @@
 #!/bin/sh
 rm -rf node_modules/.cache
-rm -rf .next/
 rm -rf out/
 node_modules/.bin/next build && node_modules/.bin/next export
 touch out/.nojekyll

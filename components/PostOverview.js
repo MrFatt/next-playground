@@ -47,7 +47,7 @@ export default withStyles(styles)(props => {
   return (
     <Card elevation={0} className={classes.card}>
       <CardContent className={classes.content}>
-        <Link href={`${backendurl}/post/${oid}`}>
+        <Link href={`${backendurl}/post/${encodeURI(name)}`}>
           <Typography
             gutterBottom
             variant="title"
@@ -57,7 +57,7 @@ export default withStyles(styles)(props => {
             {name}
           </Typography>
         </Link>
-        <Link href={`${backendurl}/post/${oid}`}>
+        <Link href={`${backendurl}/post/${encodeURI(name)}`}>
           <Typography component="p" className={[classes.hover, classes.meta]}>
             阅读更多
           </Typography>

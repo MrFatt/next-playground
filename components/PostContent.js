@@ -1,25 +1,13 @@
 const markdownIt = require("markdown-it");
+import updateRefs from '../helpers/utils';
 
 const PostContent = props => {
   const markdownConfig = {
     html: true
   };
 
-  const imageRegex = new RegExp(/\!\[(.*)\]\(images\/(.*)\)/g);
   let text = props.data.text;
-  let regExpExecArray = imageRegex.exec(text);
-  while (regExpExecArray) {
-    text = text.replace(
-      regExpExecArray[0],
-      `![${
-        regExpExecArray[1]
-      }](https://github.com/TWNTF/Translations/raw/master/docs/${encodeURI(
-        props.name
-      )}/images/${regExpExecArray[2]}/)`
-    );
-    regExpExecArray = imageRegex.exec(text);
-  }
-
+  text = updateRefs(text,props.name);
   const postHTML = markdownIt(markdownConfig).render(text);
 
   return (
