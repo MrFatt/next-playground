@@ -1,8 +1,10 @@
 const markdownIt = require("markdown-it");
 
-
-const PostContent = (props) => {
-  const postHTML = markdownIt().render(props.data.text);
+const PostContent = props => {
+  const markdownConfig = {
+    html: true
+  };
+  const postHTML = markdownIt(markdownConfig).render(props.data.text);
 
   return (
     <div>
@@ -35,7 +37,8 @@ const PostContent = (props) => {
             margin-top: 0;
           }
 
-          p, li{
+          p,
+          li {
             word-wrap: break-word;
             font-size: 21px;
             line-height: 1.58;
