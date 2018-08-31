@@ -3,15 +3,17 @@ const fetch = require("isomorphic-unfetch");
 module.exports = {
   assetPrefix: process.env.NODE_ENV === "production" ? "/next-playground" : "",
   exportPathMap: async function() {
-    const res = await fetch("https://api.tvmaze.com/search/shows?q=batman");
-    const shows = await res.json();
+    const res = await fetch(
+      "https://api.github.com/repos/TWNTF/Translations/contents/docs"
+    );
+    const docs = await res.json();
 
-    const routes = shows.reduce(
-      (acc, { show }) =>
+    const routes = docs.reduce(
+      (acc, { sha, name }) =>
         Object.assign({}, acc, {
-          [`/post/${show.id}`]: {
+          [`/post/${sha}`]: {
             page: "/post",
-            query: { id: show.id }
+            query: { name: name }
           }
         }),
       {}
@@ -27,14 +29,14 @@ module.exports = {
     // Perform customizations to webpack config
     // console.log('webpack');
     // console.log(config.module.rules, dev);
-    config.node = {fs: "empty"}
+    config.node = { fs: "empty" };
     config.module.rules = config.module.rules.map(rule => {
-      if(rule.loader === 'babel-loader') {
-        rule.options.cacheDirectory = false
+      if (rule.loader === "babel-loader") {
+        rule.options.cacheDirectory = false;
       }
-      return rule
-    })
+      return rule;
+    });
     // Important: return the modified config
-    return config
+    return config;
   }
 };

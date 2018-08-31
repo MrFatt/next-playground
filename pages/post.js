@@ -1,22 +1,21 @@
 import MyLayout from "../components/MyLayout";
 import PostContent from "../components/PostContent";
 import { Query } from "react-apollo";
+import { withRouter } from "next/router";
 import gql from "graphql-tag";
 
-const getPath = title => title;
+const getPath = name => `master:docs/${name}/README.md`;
 
-export default props => {
-  const { title } = props;
+export default withRouter(props => {
+  const { name } = props.router.query;
   return (
     <Query
       query={gql`
         {
           organization(login: "TWNTF") {
             repository(name: "Translations") {
-              resourcePath
               object(
-                # expression: ${getPath(title)}
-                expression: "master:docs/React Native at Airbnb/blogs/React-Native-at-Airbnb.md"
+                expression: "${getPath(name)}"
               ) {
                 ... on Blob {
                   text
@@ -36,4 +35,4 @@ export default props => {
       }}
     </Query>
   );
-};
+});
