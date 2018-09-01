@@ -9,7 +9,8 @@ const bodyStyle = {
   width: 1000,
   marginLeft: "auto",
   marginRight: "auto",
-  marginTop: 50
+  marginTop: 50,
+  fontFamily: '"Open Sans", "Microsoft YaHei", "微软雅黑", STXihei,"华文细黑", sans-serif'
 };
 
 

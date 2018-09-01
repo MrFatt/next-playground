@@ -6,7 +6,7 @@ const styles = () => ({
   button: {
     paddingRight: 20,
     paddingLeft: 20,
-    fontSize: 18
+    fontSize: 26
   }
 });
 

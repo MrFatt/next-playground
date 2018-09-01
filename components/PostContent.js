@@ -12,23 +12,6 @@ const PostContent = props => {
       <div dangerouslySetInnerHTML={{ __html: postHTML }} />
       <style global jsx>
         {`
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6 {
-            font-family: "Open Sans", "Microsoft YaHei", "微软雅黑", STXihei,
-              "华文细黑", sans-serif;
-          }
-          p,
-          ul,
-          li,
-          a {
-            font-family: "Roboto", "Microsoft YaHei", "微软雅黑", STXihei,
-              "华文细黑", serif;
-          }
-
           img {
             max-width: 1000px;
           }
@@ -45,7 +28,7 @@ const PostContent = props => {
           p,
           li {
             word-wrap: break-word;
-            font-size: 21px;
+            font-size: 18px;
             line-height: 1.58;
             letter-spacing: -0.003em;
           }
