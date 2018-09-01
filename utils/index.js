@@ -46,7 +46,7 @@ const replacePostRefs = async text => {
     const oid = await getOid(postExecArray[2]);
     text = text.replace(
       postExecArray[0],
-      `[${postExecArray[1]}](${oid})`
+      `[${postExecArray[1]}](${process.env.BACKEND_URL}/post/${oid})`
     );
     postExecArray = postRegex.exec(text);
   }
